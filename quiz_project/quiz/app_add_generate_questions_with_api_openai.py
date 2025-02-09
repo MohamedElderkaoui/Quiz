@@ -5,7 +5,10 @@ from .models import Question, Answer
 
 # Cargar variables de entorno
 load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")  # Asegurar que la API Key esté configurada correctamente
+import os
+import openai
+ 
+openai.api_key = os.environ["a"]
 def generate_questions_from_openai(prompt, num_questions=5):
     try:
         response = openai.ChatCompletion.create(

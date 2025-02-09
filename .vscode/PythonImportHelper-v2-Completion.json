@@ -167,6 +167,22 @@
         "documentation": {}
     },
     {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
         "label": "csv",
         "kind": 6,
         "isExtraImport": true,
@@ -224,11 +240,35 @@
         "documentation": {}
     },
     {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "TemplateResponse",
         "importPath": "django.template.response",
         "description": "django.template.response",
         "isExtraImport": true,
         "detail": "django.template.response",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
         "documentation": {}
     },
     {
@@ -256,14 +296,6 @@
         "documentation": {}
     },
     {
-        "label": "serializers",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -285,6 +317,38 @@
         "description": "rest_framework_simplejwt.views",
         "isExtraImport": true,
         "detail": "rest_framework_simplejwt.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_schema_view",
+        "importPath": "rest_framework.schemas",
+        "description": "rest_framework.schemas",
+        "isExtraImport": true,
+        "detail": "rest_framework.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "SpectacularAPIView",
+        "importPath": "drf_spectacular.views",
+        "description": "drf_spectacular.views",
+        "isExtraImport": true,
+        "detail": "drf_spectacular.views",
+        "documentation": {}
+    },
+    {
+        "label": "SpectacularRedocView",
+        "importPath": "drf_spectacular.views",
+        "description": "drf_spectacular.views",
+        "isExtraImport": true,
+        "detail": "drf_spectacular.views",
+        "documentation": {}
+    },
+    {
+        "label": "SpectacularSwaggerView",
+        "importPath": "drf_spectacular.views",
+        "description": "drf_spectacular.views",
+        "isExtraImport": true,
+        "detail": "drf_spectacular.views",
         "documentation": {}
     },
     {
@@ -330,6 +394,54 @@
         "documentation": {}
     },
     {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "authentication_classes",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "permission_classes",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
         "label": "api_view",
         "importPath": "rest_framework.decorators",
         "description": "rest_framework.decorators",
@@ -362,6 +474,38 @@
         "documentation": {}
     },
     {
+        "label": "AllowAny",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "AllowAny",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticated",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "JWTAuthentication",
+        "importPath": "rest_framework_simplejwt.authentication",
+        "description": "rest_framework_simplejwt.authentication",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.authentication",
+        "documentation": {}
+    },
+    {
         "label": "JWTAuthentication",
         "importPath": "rest_framework_simplejwt.authentication",
         "description": "rest_framework_simplejwt.authentication",
@@ -375,6 +519,86 @@
         "description": "django_datatables_view.base_datatable_view",
         "isExtraImport": true,
         "detail": "django_datatables_view.base_datatable_view",
+        "documentation": {}
+    },
+    {
+        "label": "APIView",
+        "importPath": "rest_framework.views",
+        "description": "rest_framework.views",
+        "isExtraImport": true,
+        "detail": "rest_framework.views",
+        "documentation": {}
+    },
+    {
+        "label": "APIView",
+        "importPath": "rest_framework.views",
+        "description": "rest_framework.views",
+        "isExtraImport": true,
+        "detail": "rest_framework.views",
+        "documentation": {}
+    },
+    {
+        "label": "APIView",
+        "importPath": "rest_framework.views",
+        "description": "rest_framework.views",
+        "isExtraImport": true,
+        "detail": "rest_framework.views",
+        "documentation": {}
+    },
+    {
+        "label": "extend_schema",
+        "importPath": "drf_spectacular.utils",
+        "description": "drf_spectacular.utils",
+        "isExtraImport": true,
+        "detail": "drf_spectacular.utils",
+        "documentation": {}
+    },
+    {
+        "label": "OpenApiParameter",
+        "importPath": "drf_spectacular.utils",
+        "description": "drf_spectacular.utils",
+        "isExtraImport": true,
+        "detail": "drf_spectacular.utils",
+        "documentation": {}
+    },
+    {
+        "label": "OpenApiExample",
+        "importPath": "drf_spectacular.utils",
+        "description": "drf_spectacular.utils",
+        "isExtraImport": true,
+        "detail": "drf_spectacular.utils",
+        "documentation": {}
+    },
+    {
+        "label": "OpenApiTypes",
+        "importPath": "drf_spectacular.types",
+        "description": "drf_spectacular.types",
+        "isExtraImport": true,
+        "detail": "drf_spectacular.types",
+        "documentation": {}
+    },
+    {
+        "label": "require_GET",
+        "importPath": "django.views.decorators.http",
+        "description": "django.views.decorators.http",
+        "isExtraImport": true,
+        "detail": "django.views.decorators.http",
+        "documentation": {}
+    },
+    {
+        "label": "require_POST",
+        "importPath": "django.views.decorators.http",
+        "description": "django.views.decorators.http",
+        "isExtraImport": true,
+        "detail": "django.views.decorators.http",
+        "documentation": {}
+    },
+    {
+        "label": "csrf_exempt",
+        "importPath": "django.views.decorators.csrf",
+        "description": "django.views.decorators.csrf",
+        "isExtraImport": true,
+        "detail": "django.views.decorators.csrf",
         "documentation": {}
     },
     {
@@ -587,6 +811,33 @@
         "documentation": {}
     },
     {
+        "label": "QuestionViewSet",
+        "kind": 6,
+        "importPath": "quiz_project.quiz.api",
+        "description": "quiz_project.quiz.api",
+        "peekOfCode": "class QuestionViewSet(viewsets.ModelViewSet):\n    \"\"\"API endpoint for managing questions\"\"\"\n    queryset = Question.objects.all()\n    serializer_class = QuestionSerializer\nclass AnswerViewSet(viewsets.ModelViewSet):\n    \"\"\"API endpoint for managing answers\"\"\"\n    queryset = Answer.objects.all()\n    serializer_class = AnswerSerializer\nclass ScoreViewSet(viewsets.ModelViewSet):\n    \"\"\"API endpoint for managing scores\"\"\"",
+        "detail": "quiz_project.quiz.api",
+        "documentation": {}
+    },
+    {
+        "label": "AnswerViewSet",
+        "kind": 6,
+        "importPath": "quiz_project.quiz.api",
+        "description": "quiz_project.quiz.api",
+        "peekOfCode": "class AnswerViewSet(viewsets.ModelViewSet):\n    \"\"\"API endpoint for managing answers\"\"\"\n    queryset = Answer.objects.all()\n    serializer_class = AnswerSerializer\nclass ScoreViewSet(viewsets.ModelViewSet):\n    \"\"\"API endpoint for managing scores\"\"\"\n    queryset = Score.objects.all().order_by('-date')  # Sort by latest scores\n    serializer_class = ScoreSerializer",
+        "detail": "quiz_project.quiz.api",
+        "documentation": {}
+    },
+    {
+        "label": "ScoreViewSet",
+        "kind": 6,
+        "importPath": "quiz_project.quiz.api",
+        "description": "quiz_project.quiz.api",
+        "peekOfCode": "class ScoreViewSet(viewsets.ModelViewSet):\n    \"\"\"API endpoint for managing scores\"\"\"\n    queryset = Score.objects.all().order_by('-date')  # Sort by latest scores\n    serializer_class = ScoreSerializer",
+        "detail": "quiz_project.quiz.api",
+        "documentation": {}
+    },
+    {
         "label": "QuizConfig",
         "kind": 6,
         "importPath": "quiz_project.quiz.apps",
@@ -627,7 +878,7 @@
         "kind": 5,
         "importPath": "quiz_project.quiz.app_add_generate_questions_with_api_openai",
         "description": "quiz_project.quiz.app_add_generate_questions_with_api_openai",
-        "peekOfCode": "openai.api_key = os.getenv(\"OPENAI_API_KEY\")  # Asegurar que la API Key esté configurada correctamente\ndef generate_questions_from_openai(prompt, num_questions=5):\n    try:\n        response = openai.ChatCompletion.create(\n            model=\"gpt-3.5-turbo\",\n            messages=[\n                {\"role\": \"system\", \"content\": \"You are a helpful assistant.\"},\n                {\"role\": \"user\", \"content\": prompt}\n            ],\n            max_tokens=500,",
+        "peekOfCode": "openai.api_key = os.environ[\"a\"]\ndef generate_questions_from_openai(prompt, num_questions=5):\n    try:\n        response = openai.ChatCompletion.create(\n            model=\"gpt-3.5-turbo\",\n            messages=[\n                {\"role\": \"system\", \"content\": \"You are a helpful assistant.\"},\n                {\"role\": \"user\", \"content\": prompt}\n            ],\n            max_tokens=500,",
         "detail": "quiz_project.quiz.app_add_generate_questions_with_api_openai",
         "documentation": {}
     },
@@ -708,7 +959,7 @@
         "kind": 5,
         "importPath": "quiz_project.quiz.urls",
         "description": "quiz_project.quiz.urls",
-        "peekOfCode": "urlpatterns = [\n    path('api/', views.api_home, name='api_home'),\n    path('api/questions/', views.get_questions, name='get_questions'),\n    path('api/score/', views.submit_score, name='submit_score'),\n    path('api/ranking/', views.ranking, name='ranking'),\n    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),  # Use the built-in JWT view\n    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),  # Refresh JWT tokens\n    path('api/questions/', views.questions_list, name='questions_list'),\n]",
+        "peekOfCode": "urlpatterns = [\n    # API Home\n    path('api/', views.api_home, name='api_home'),\n    # Questions endpoints:\n    # Use a unique path for each view to avoid conflicts.\n    path('api/questions/all/', views.get_questions, name='get_questions'),\n    path('api/questions/list/', views.questions_list, name='questions_list'),\n    # Score endpoints\n    path('api/score/', views.submit_score, name='submit_score'),\n    path('api/ranking/', views.ranking, name='ranking'),",
         "detail": "quiz_project.quiz.urls",
         "documentation": {}
     },
@@ -718,6 +969,24 @@
         "importPath": "quiz_project.quiz.views",
         "description": "quiz_project.quiz.views",
         "peekOfCode": "class QuestionListJson(BaseDatatableView):\n    model = Question\n    columns = ['text', 'quiz_category', 'difficulty']  # Columns to display\n    order_columns = ['text', 'quiz_category', 'difficulty']  # Order columns\n    max_display_length = 500  # Maximum number of records to display\n    def get_queryset(self):\n        return Question.objects.all()\n# questions_list\ndef questions_list(request):\n    return QuestionListJson.as_view()(request)",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "PublicView",
+        "kind": 6,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "class PublicView(APIView):\n    \"\"\"\n    A public API view that does not require authentication.\n    \"\"\"\n    permission_classes = [AllowAny]  # Allows anyone to access this endpoint\n    def get(self, request):\n        return Response({\"message\": \"This is a public endpoint!\"})\nfrom rest_framework.views import APIView\nfrom rest_framework.response import Response\nfrom rest_framework.permissions import AllowAny",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "PublicView",
+        "kind": 6,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "class PublicView(APIView):\n    \"\"\"\n    A public API view that does not require authentication.\n    \"\"\"\n    permission_classes = [AllowAny]  # Allows anyone to access this endpoint\n    def get(self, request):\n        return Response({\"message\": \"This is a public endpoint!\"})\nfrom drf_spectacular.utils import extend_schema, OpenApiParameter, OpenApiExample\nfrom drf_spectacular.types import OpenApiTypes\nimport random",
         "detail": "quiz_project.quiz.views",
         "documentation": {}
     },
@@ -789,7 +1058,133 @@
         "kind": 2,
         "importPath": "quiz_project.quiz.views",
         "description": "quiz_project.quiz.views",
-        "peekOfCode": "def questions_list(request):\n    return QuestionListJson.as_view()(request)",
+        "peekOfCode": "def questions_list(request):\n    return QuestionListJson.as_view()(request)\nfrom rest_framework.views import APIView\nfrom rest_framework.response import Response\nfrom rest_framework.permissions import AllowAny\nclass PublicView(APIView):\n    \"\"\"\n    A public API view that does not require authentication.\n    \"\"\"\n    permission_classes = [AllowAny]  # Allows anyone to access this endpoint",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_random_questions",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "def get_random_questions(request):\n    \"\"\"Returns 10 random questions with their answers.\"\"\"\n    questions = list(Question.objects.all())\n    if len(questions) < 10:\n        return Response({\"error\": \"Not enough questions in the database\"}, status=400)\n    random.shuffle(questions)  # Shuffle the questions list\n    questions_with_answers = []\n    for question in questions[:10]:\n        answers = Answer.objects.filter(question=question)\n        serialized_answers = AnswerSerializer(answers, many=True).data",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "submit_score",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "def submit_score(request):\n    \"\"\"Store a player's score.\"\"\"\n    serializer = ScoreSerializer(data=request.data)\n    if serializer.is_valid():\n        serializer.save()\n        return Response({\"message\": \"Score saved successfully\"}, status=201)\n    return Response(serializer.errors, status=400)\n# Fetch top 10 rankings based on points\n@api_view(['GET'])\ndef get_ranking(request):",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_ranking",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "def get_ranking(request):\n    \"\"\"Returns the top 10 scores.\"\"\"\n    scores = Score.objects.order_by('-points')[:10]\n    serializer = ScoreSerializer(scores, many=True)\n    return Response(serializer.data)\n# Get a list of all questions\n@api_view(['GET'])\ndef get_all_questions(request):\n    \"\"\"Returns all questions.\"\"\"\n    questions = Question.objects.all()",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_all_questions",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "def get_all_questions(request):\n    \"\"\"Returns all questions.\"\"\"\n    questions = Question.objects.all()\n    serializer = QuestionSerializer(questions, many=True)\n    return Response(serializer.data)\n# Add a new question (only accessible to admins or authorized users)\n@api_view(['POST'])\n@authentication_classes([JWTAuthentication])\n@permission_classes([IsAuthenticated])\ndef add_question(request):",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "add_question",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "def add_question(request):\n    \"\"\"Add a new question.\"\"\"\n    serializer = QuestionSerializer(data=request.data)\n    if serializer.is_valid():\n        serializer.save()\n        return Response({\"message\": \"Question added successfully\"}, status=201)\n    return Response(serializer.errors, status=400)\n# Edit an existing question (only accessible to admins or authorized users)\n@api_view(['PUT'])\n@authentication_classes([JWTAuthentication])",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "edit_question",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "def edit_question(request, question_id):\n    \"\"\"Edit an existing question.\"\"\"\n    question = get_object_or_404(Question, id=question_id)\n    serializer = QuestionSerializer(question, data=request.data, partial=True)\n    if serializer.is_valid():\n        serializer.save()\n        return Response({\"message\": \"Question updated successfully\"}, status=200)\n    return Response(serializer.errors, status=400)\n# Delete a question (only accessible to admins or authorized users)\n@api_view(['DELETE'])",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "delete_question",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "def delete_question(request, question_id):\n    \"\"\"Delete a question.\"\"\"\n    question = get_object_or_404(Question, id=question_id)\n    question.delete()\n    return Response({\"message\": \"Question deleted successfully\"}, status=204)\n# Add an answer to a question\n@api_view(['POST'])\n@authentication_classes([JWTAuthentication])\n@permission_classes([IsAuthenticated])\ndef add_answer(request, question_id):",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "add_answer",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "def add_answer(request, question_id):\n    \"\"\"Add an answer for a question.\"\"\"\n    question = get_object_or_404(Question, id=question_id)\n    serializer = AnswerSerializer(data=request.data)\n    if serializer.is_valid():\n        serializer.save(question=question)\n        return Response({\"message\": \"Answer added successfully\"}, status=201)\n    return Response(serializer.errors, status=400)\n# Edit an existing answer\n@api_view(['PUT'])",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "edit_answer",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "def edit_answer(request, answer_id):\n    \"\"\"Edit an existing answer.\"\"\"\n    answer = get_object_or_404(Answer, id=answer_id)\n    serializer = AnswerSerializer(answer, data=request.data, partial=True)\n    if serializer.is_valid():\n        serializer.save()\n        return Response({\"message\": \"Answer updated successfully\"}, status=200)\n    return Response(serializer.errors, status=400)\n# Delete an answer\n@api_view(['DELETE'])",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "delete_answer",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "def delete_answer(request, answer_id):\n    \"\"\"Delete an answer.\"\"\"\n    answer = get_object_or_404(Answer, id=answer_id)\n    answer.delete()\n    return Response({\"message\": \"Answer deleted successfully\"}, status=204)\nimport json\nimport random\nfrom django.http import JsonResponse\nfrom django.views.decorators.http import require_GET, require_POST\nfrom django.views.decorators.csrf import csrf_exempt",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "api_home",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "def api_home(request):\n    \"\"\"\n    A simple API home view that returns a welcome message in JSON format.\n    \"\"\"\n    return JsonResponse({\"message\": \"Welcome to the API\"}, status=200)\n@require_GET\ndef get_questions(request):\n    \"\"\"\n    Return 10 random questions as JSON.\n    This view fetches all questions from the database, shuffles them,",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_questions",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "def get_questions(request):\n    \"\"\"\n    Return 10 random questions as JSON.\n    This view fetches all questions from the database, shuffles them,\n    and returns the first 10 questions using the QuestionSerializer.\n    \"\"\"\n    questions = list(Question.objects.all())\n    if len(questions) < 10:\n        return JsonResponse({\"error\": \"Not enough questions in the database\"}, status=400)\n    random.shuffle(questions)",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "ranking",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "def ranking(request):\n    \"\"\"\n    Return the top 10 scores as JSON.\n    Scores are ordered in descending order by points.\n    \"\"\"\n    top_scores = Score.objects.order_by('-points')[:10]\n    serialized_scores = ScoreSerializer(top_scores, many=True).data\n    return JsonResponse(serialized_scores, safe=False)\n@csrf_exempt  # Only for demonstration; consider using proper CSRF protection in production.\n@require_POST",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "submit_score",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "def submit_score(request):\n    \"\"\"\n    Receive a score submission via a POST request (as JSON) and save it.\n    Expects the request body to contain valid JSON data for a Score.\n    \"\"\"\n    try:\n        # Parse the incoming JSON data\n        data = json.loads(request.body)\n    except json.JSONDecodeError:\n        return JsonResponse({\"error\": \"Invalid JSON\"}, status=400)",
         "detail": "quiz_project.quiz.views",
         "documentation": {}
     },
@@ -879,7 +1274,16 @@
         "kind": 5,
         "importPath": "quiz_project.quiz_project.settings",
         "description": "quiz_project.quiz_project.settings",
-        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',\n    ),\n}\nASGI_APPLICATION = 'quiz_project.asgi.application'\nCHANNEL_LAYERS = {\n    \"default\": {\n        \"BACKEND\": \"channels.layers.InMemoryChannelLayer\",  # Usa Redis en producción\n    },",
+        "peekOfCode": "REST_FRAMEWORK = {\n    # Enable JWT authentication\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',\n    ),\n    # Default permission: Require authentication\n    'DEFAULT_PERMISSION_CLASSES': (\n        'rest_framework.permissions.IsAuthenticated',\n    ),\n    # Pagination for large datasets",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SPECTACULAR_SETTINGS",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "SPECTACULAR_SETTINGS = {\n    'TITLE': 'Your Project API',\n    'DESCRIPTION': 'Your project description',\n    'VERSION': '1.0.0',\n    'SERVE_INCLUDE_SCHEMA': False,\n    # OTHER SETTINGS\n}\nASGI_APPLICATION = 'quiz_project.asgi.application'\nCHANNEL_LAYERS = {\n    \"default\": {",
         "detail": "quiz_project.quiz_project.settings",
         "documentation": {}
     },
@@ -978,7 +1382,7 @@
         "kind": 5,
         "importPath": "quiz_project.quiz_project.settings",
         "description": "quiz_project.quiz_project.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nimport os\nBASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))\nSTATIC_URL = '/static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'html')",
         "detail": "quiz_project.quiz_project.settings",
         "documentation": {}
     },
@@ -987,7 +1391,7 @@
         "kind": 5,
         "importPath": "quiz_project.quiz_project.settings",
         "description": "quiz_project.quiz_project.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nimport os\nBASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))\nSTATIC_URL = '/static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'html')\n# Default primary key field type",
         "detail": "quiz_project.quiz_project.settings",
         "documentation": {}
     },
@@ -996,7 +1400,7 @@
         "kind": 5,
         "importPath": "quiz_project.quiz_project.settings",
         "description": "quiz_project.quiz_project.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#\nimport environ",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nimport os\nBASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))\nSTATIC_URL = '/static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'html')\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field",
         "detail": "quiz_project.quiz_project.settings",
         "documentation": {}
     },
@@ -1005,7 +1409,16 @@
         "kind": 5,
         "importPath": "quiz_project.quiz_project.settings",
         "description": "quiz_project.quiz_project.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#\nimport environ\nimport os",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nimport os\nBASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))\nSTATIC_URL = '/static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'html')\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))\nSTATIC_URL = '/static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'html')\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#\nimport environ\nimport os\nfrom pathlib import Path",
         "detail": "quiz_project.quiz_project.settings",
         "documentation": {}
     },
@@ -1014,7 +1427,16 @@
         "kind": 5,
         "importPath": "quiz_project.quiz_project.settings",
         "description": "quiz_project.quiz_project.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#\nimport environ\nimport os\nfrom pathlib import Path\nBASE_DIR = Path(__file__).resolve().parent.parent\nenv = environ.Env()",
+        "peekOfCode": "STATIC_URL = '/static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'html')\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#\nimport environ\nimport os\nfrom pathlib import Path\nBASE_DIR = Path(__file__).resolve().parent.parent",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_ROOT",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "STATIC_ROOT = os.path.join(BASE_DIR, 'html')\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#\nimport environ\nimport os\nfrom pathlib import Path\nBASE_DIR = Path(__file__).resolve().parent.parent\nenv = environ.Env()",
         "detail": "quiz_project.quiz_project.settings",
         "documentation": {}
     },
