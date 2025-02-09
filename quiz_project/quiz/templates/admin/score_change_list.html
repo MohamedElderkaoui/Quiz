@@ -1,0 +1,8 @@
+{% extends "admin/change_list.html" %}
+
+{% block object-tools %}
+    <div>
+        <a href="{% url 'admin:score_export_csv' %}" class="button">📥 Exportar CSV</a>
+    </div>
+    {{ block.super }}
+{% endblock %}

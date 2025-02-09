@@ -1,0 +1,1093 @@
+[
+    {
+        "label": "reflex",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "reflex",
+        "description": "reflex",
+        "detail": "reflex",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "websockets",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "websockets",
+        "description": "websockets",
+        "detail": "websockets",
+        "documentation": {}
+    },
+    {
+        "label": "BaseCommand",
+        "importPath": "django.core.management.base",
+        "description": "django.core.management.base",
+        "isExtraImport": true,
+        "detail": "django.core.management.base",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "openai",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "openai",
+        "description": "openai",
+        "detail": "openai",
+        "documentation": {}
+    },
+    {
+        "label": "Question",
+        "importPath": "quiz.models",
+        "description": "quiz.models",
+        "isExtraImport": true,
+        "detail": "quiz.models",
+        "documentation": {}
+    },
+    {
+        "label": "Answer",
+        "importPath": "quiz.models",
+        "description": "quiz.models",
+        "isExtraImport": true,
+        "detail": "quiz.models",
+        "documentation": {}
+    },
+    {
+        "label": "generate_questions_from_openai",
+        "importPath": "quiz.app_add_generate_questions_with_api_openai",
+        "description": "quiz.app_add_generate_questions_with_api_openai",
+        "isExtraImport": true,
+        "detail": "quiz.app_add_generate_questions_with_api_openai",
+        "documentation": {}
+    },
+    {
+        "label": "save_questions_to_db",
+        "importPath": "quiz.app_add_generate_questions_with_api_openai",
+        "description": "quiz.app_add_generate_questions_with_api_openai",
+        "isExtraImport": true,
+        "detail": "quiz.app_add_generate_questions_with_api_openai",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "re_path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "TemplateResponse",
+        "importPath": "django.template.response",
+        "description": "django.template.response",
+        "isExtraImport": true,
+        "detail": "django.template.response",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncWebsocketConsumer",
+        "importPath": "channels.generic.websocket",
+        "description": "channels.generic.websocket",
+        "isExtraImport": true,
+        "detail": "channels.generic.websocket",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TokenObtainPairView",
+        "importPath": "rest_framework_simplejwt.views",
+        "description": "rest_framework_simplejwt.views",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.views",
+        "documentation": {}
+    },
+    {
+        "label": "TokenRefreshView",
+        "importPath": "rest_framework_simplejwt.views",
+        "description": "rest_framework_simplejwt.views",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.views",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "redis",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "redis",
+        "description": "redis",
+        "detail": "redis",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "cache",
+        "importPath": "django.core.cache",
+        "description": "django.core.cache",
+        "isExtraImport": true,
+        "detail": "django.core.cache",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "authentication_classes",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "permission_classes",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticated",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "JWTAuthentication",
+        "importPath": "rest_framework_simplejwt.authentication",
+        "description": "rest_framework_simplejwt.authentication",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.authentication",
+        "documentation": {}
+    },
+    {
+        "label": "BaseDatatableView",
+        "importPath": "django_datatables_view.base_datatable_view",
+        "description": "django_datatables_view.base_datatable_view",
+        "isExtraImport": true,
+        "detail": "django_datatables_view.base_datatable_view",
+        "documentation": {}
+    },
+    {
+        "label": "django",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django",
+        "description": "django",
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "ProtocolTypeRouter",
+        "importPath": "channels.routing",
+        "description": "channels.routing",
+        "isExtraImport": true,
+        "detail": "channels.routing",
+        "documentation": {}
+    },
+    {
+        "label": "URLRouter",
+        "importPath": "channels.routing",
+        "description": "channels.routing",
+        "isExtraImport": true,
+        "detail": "channels.routing",
+        "documentation": {}
+    },
+    {
+        "label": "websocket_urlpatterns",
+        "importPath": "quiz.routing",
+        "description": "quiz.routing",
+        "isExtraImport": true,
+        "detail": "quiz.routing",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "environ",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "environ",
+        "description": "environ",
+        "detail": "environ",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "QuizState",
+        "kind": 6,
+        "importPath": "quiz_frontend.pages.quiz",
+        "description": "quiz_frontend.pages.quiz",
+        "peekOfCode": "class QuizState(rx.State):\n    question: str = \"Cargando pregunta...\"\n    answers: list = []\n    correct_answer: str = \"\"\n    seconds_remaining: int = 30\n    score: int = 0\n    question_index: int = 0\n    game_over: bool = False\n    async def fetch_question(self):\n        \"\"\"Obtiene una pregunta del backend Django.\"\"\"",
+        "detail": "quiz_frontend.pages.quiz",
+        "documentation": {}
+    },
+    {
+        "label": "quiz",
+        "kind": 2,
+        "importPath": "quiz_frontend.pages.quiz",
+        "description": "quiz_frontend.pages.quiz",
+        "peekOfCode": "def quiz():\n    return rx.center(\n        rx.vstack(\n            rx.heading(\"Pregunta:\", size=\"lg\"),\n            rx.text(QuizState.question),\n            rx.foreach(QuizState.answers, lambda answer: rx.button(answer, on_click=lambda: QuizState.check_answer(answer))),\n            rx.text(f\"Tiempo restante: {QuizState.seconds_remaining} s\"),\n            spacing=\"4\"\n        ),\n        height=\"100vh\"",
+        "detail": "quiz_frontend.pages.quiz",
+        "documentation": {}
+    },
+    {
+        "label": "RankingState",
+        "kind": 6,
+        "importPath": "quiz_frontend.pages.ranking",
+        "description": "quiz_frontend.pages.ranking",
+        "peekOfCode": "class RankingState(rx.State):\n    ranking: list = []\n    async def get_ranking(self):\n        \"\"\"Obtiene los mejores puntajes del backend Django.\"\"\"\n        resp = await rx.get(\"/api/ranking/\")\n        self.ranking = resp.json()\ndef ranking():\n    return rx.center(\n        rx.vstack(\n            rx.heading(\"Ranking de Jugadores\", size=\"xl\"),",
+        "detail": "quiz_frontend.pages.ranking",
+        "documentation": {}
+    },
+    {
+        "label": "ranking",
+        "kind": 2,
+        "importPath": "quiz_frontend.pages.ranking",
+        "description": "quiz_frontend.pages.ranking",
+        "peekOfCode": "def ranking():\n    return rx.center(\n        rx.vstack(\n            rx.heading(\"Ranking de Jugadores\", size=\"xl\"),\n            rx.foreach(RankingState.ranking, lambda score: rx.text(f\"{score['player_name']}: {score['points']} pts\")),\n            rx.button(\"Volver al Inicio\", on_click=lambda: rx.redirect(\"/\")),\n            spacing=\"4\"\n        ),\n        height=\"100vh\"\n    )",
+        "detail": "quiz_frontend.pages.ranking",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "quiz_frontend.quiz_frontend",
+        "description": "quiz_frontend.quiz_frontend",
+        "peekOfCode": "def index():\n    return rx.center(\n        rx.vstack(\n            rx.heading(\"Cuestionario Contrarreloj\", size=\"xl\"),\n            rx.button(\"Comenzar Juego\", on_click=lambda: rx.redirect(\"/quiz\")),\n            rx.button(\"Ver Ranking\", on_click=lambda: rx.redirect(\"/ranking\")),\n            spacing=\"4\"\n        ),\n        height=\"100vh\"\n    )",
+        "detail": "quiz_frontend.quiz_frontend",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "quiz_frontend.quiz_frontend",
+        "description": "quiz_frontend.quiz_frontend",
+        "peekOfCode": "app = rx.App()\napp.add_page(index, route=\"/\", title=\"Inicio\")",
+        "detail": "quiz_frontend.quiz_frontend",
+        "documentation": {}
+    },
+    {
+        "label": "Command",
+        "kind": 6,
+        "importPath": "quiz_project.quiz.management.commands.generate_questions",
+        "description": "quiz_project.quiz.management.commands.generate_questions",
+        "peekOfCode": "class Command(BaseCommand):\n    help = \"Generates questions from OpenAI and saves them to the database\"\n    def handle(self, *args, **kwargs):\n        # Asegurarse de que la API Key está configurada correctamente\n        openai.api_key = os.getenv('OPENAI_API_KEY')\n        if not openai.api_key:\n            self.stdout.write(self.style.ERROR(\"Error: OPENAI_API_KEY no está configurada.\"))\n            return\n        # Definir el prompt para generar preguntas\n        prompt = \"Generate 5 multiple-choice questions on general knowledge with answers.\"",
+        "detail": "quiz_project.quiz.management.commands.generate_questions",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "quiz_project.quiz.migrations.0001_initial",
+        "description": "quiz_project.quiz.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Question',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('text', models.CharField(max_length=255)),",
+        "detail": "quiz_project.quiz.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "AnswerInline",
+        "kind": 6,
+        "importPath": "quiz_project.quiz.admin",
+        "description": "quiz_project.quiz.admin",
+        "peekOfCode": "class AnswerInline(admin.TabularInline):\n    model = Answer\n    extra = 1\n    fields = ['text', 'is_correct']\n# 🔹 Configuración del modelo Question en el admin\n@admin.register(Question)\nclass QuestionAdmin(admin.ModelAdmin):\n    list_display = ('text', 'quiz_category', 'difficulty')\n    list_filter = ('quiz_category', 'difficulty')\n    search_fields = ('text',)",
+        "detail": "quiz_project.quiz.admin",
+        "documentation": {}
+    },
+    {
+        "label": "QuestionAdmin",
+        "kind": 6,
+        "importPath": "quiz_project.quiz.admin",
+        "description": "quiz_project.quiz.admin",
+        "peekOfCode": "class QuestionAdmin(admin.ModelAdmin):\n    list_display = ('text', 'quiz_category', 'difficulty')\n    list_filter = ('quiz_category', 'difficulty')\n    search_fields = ('text',)\n    ordering = ('difficulty',)\n    inlines = [AnswerInline]\n# 🔹 Configuración del modelo Score en el admin (con botón de exportación)\n@admin.register(Score)\nclass ScoreAdmin(admin.ModelAdmin):\n    list_display = ('player_name', 'points', 'date')",
+        "detail": "quiz_project.quiz.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ScoreAdmin",
+        "kind": 6,
+        "importPath": "quiz_project.quiz.admin",
+        "description": "quiz_project.quiz.admin",
+        "peekOfCode": "class ScoreAdmin(admin.ModelAdmin):\n    list_display = ('player_name', 'points', 'date')\n    list_filter = ('date',)\n    search_fields = ('player_name',)\n    ordering = ('-points',)\n    actions = [export_scores_to_csv]\n    actions_on_top = True\n    change_list_template = \"admin/score_change_list.html\"  # Plantilla personalizada\n    # Agregar URL para exportar CSV desde un botón\n    def get_urls(self):",
+        "detail": "quiz_project.quiz.admin",
+        "documentation": {}
+    },
+    {
+        "label": "AnswerAdmin",
+        "kind": 6,
+        "importPath": "quiz_project.quiz.admin",
+        "description": "quiz_project.quiz.admin",
+        "peekOfCode": "class AnswerAdmin(admin.ModelAdmin):\n    list_display = ('question', 'text', 'is_correct')\n    list_filter = ('is_correct',)\n    search_fields = ('text',)",
+        "detail": "quiz_project.quiz.admin",
+        "documentation": {}
+    },
+    {
+        "label": "export_scores_to_csv",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.admin",
+        "description": "quiz_project.quiz.admin",
+        "peekOfCode": "def export_scores_to_csv(modeladmin, request, queryset=None):\n    response = HttpResponse(content_type='text/csv')\n    response['Content-Disposition'] = 'attachment; filename=\"scores.csv\"'\n    writer = csv.writer(response, csv.excel, delimiter=',')\n    # Escribir encabezados\n    writer.writerow(['Jugador', 'Puntos', 'Fecha'])\n    # Obtener los datos a exportar (todos o filtrados)\n    scores = queryset if queryset else Score.objects.all()\n    for score in scores:\n        writer.writerow([score.player_name, score.points, score.date.strftime('%Y-%m-%d %H:%M:%S')])",
+        "detail": "quiz_project.quiz.admin",
+        "documentation": {}
+    },
+    {
+        "label": "export_scores_to_csv.short_description",
+        "kind": 5,
+        "importPath": "quiz_project.quiz.admin",
+        "description": "quiz_project.quiz.admin",
+        "peekOfCode": "export_scores_to_csv.short_description = \"📥 Exportar puntuaciones a CSV\"\n# 🔹 Inline para mostrar respuestas dentro de la pregunta\nclass AnswerInline(admin.TabularInline):\n    model = Answer\n    extra = 1\n    fields = ['text', 'is_correct']\n# 🔹 Configuración del modelo Question en el admin\n@admin.register(Question)\nclass QuestionAdmin(admin.ModelAdmin):\n    list_display = ('text', 'quiz_category', 'difficulty')",
+        "detail": "quiz_project.quiz.admin",
+        "documentation": {}
+    },
+    {
+        "label": "QuizConfig",
+        "kind": 6,
+        "importPath": "quiz_project.quiz.apps",
+        "description": "quiz_project.quiz.apps",
+        "peekOfCode": "class QuizConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'quiz'",
+        "detail": "quiz_project.quiz.apps",
+        "documentation": {}
+    },
+    {
+        "label": "generate_questions_from_openai",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.app_add_generate_questions_with_api_openai",
+        "description": "quiz_project.quiz.app_add_generate_questions_with_api_openai",
+        "peekOfCode": "def generate_questions_from_openai(prompt, num_questions=5):\n    try:\n        response = openai.ChatCompletion.create(\n            model=\"gpt-3.5-turbo\",\n            messages=[\n                {\"role\": \"system\", \"content\": \"You are a helpful assistant.\"},\n                {\"role\": \"user\", \"content\": prompt}\n            ],\n            max_tokens=500,\n            temperature=0.7",
+        "detail": "quiz_project.quiz.app_add_generate_questions_with_api_openai",
+        "documentation": {}
+    },
+    {
+        "label": "save_questions_to_db",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.app_add_generate_questions_with_api_openai",
+        "description": "quiz_project.quiz.app_add_generate_questions_with_api_openai",
+        "peekOfCode": "def save_questions_to_db(questions, category=\"General Knowledge\", difficulty=\"easy\"):\n    for question_text in questions:\n        # Crear la pregunta en la base de datos\n        question = Question.objects.create(\n            text=question_text,\n            quiz_category=category,\n            difficulty=difficulty\n        )\n        # Crear una respuesta de muestra (puedes modificar esto para generar respuestas reales)\n        Answer.objects.create(",
+        "detail": "quiz_project.quiz.app_add_generate_questions_with_api_openai",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.app_add_generate_questions_with_api_openai",
+        "description": "quiz_project.quiz.app_add_generate_questions_with_api_openai",
+        "peekOfCode": "def main():\n    # Definir el prompt para generar preguntas\n    prompt = \"Generate 5 multiple-choice questions on general knowledge with answers.\"\n    # Generar preguntas desde OpenAI\n    questions = generate_questions_from_openai(prompt, num_questions=5)\n    if questions:\n        # Guardar las preguntas en la base de datos\n        save_questions_to_db(questions, category=\"General Knowledge\", difficulty=\"easy\")\n    else:\n        print(\"No questions generated.\")",
+        "detail": "quiz_project.quiz.app_add_generate_questions_with_api_openai",
+        "documentation": {}
+    },
+    {
+        "label": "openai.api_key",
+        "kind": 5,
+        "importPath": "quiz_project.quiz.app_add_generate_questions_with_api_openai",
+        "description": "quiz_project.quiz.app_add_generate_questions_with_api_openai",
+        "peekOfCode": "openai.api_key = os.getenv(\"OPENAI_API_KEY\")  # Asegurar que la API Key esté configurada correctamente\ndef generate_questions_from_openai(prompt, num_questions=5):\n    try:\n        response = openai.ChatCompletion.create(\n            model=\"gpt-3.5-turbo\",\n            messages=[\n                {\"role\": \"system\", \"content\": \"You are a helpful assistant.\"},\n                {\"role\": \"user\", \"content\": prompt}\n            ],\n            max_tokens=500,",
+        "detail": "quiz_project.quiz.app_add_generate_questions_with_api_openai",
+        "documentation": {}
+    },
+    {
+        "label": "QuizTimerConsumer",
+        "kind": 6,
+        "importPath": "quiz_project.quiz.consumers",
+        "description": "quiz_project.quiz.consumers",
+        "peekOfCode": "class QuizTimerConsumer(AsyncWebsocketConsumer):\n    async def connect(self):\n        self.room_group_name = \"quiz_timer\"\n        await self.channel_layer.group_add(self.room_group_name, self.channel_name)\n        await self.accept()\n    async def disconnect(self, close_code):\n        await self.channel_layer.group_discard(self.room_group_name, self.channel_name)\n    async def receive(self, text_data):\n        \"\"\"Recibe mensajes del cliente (si es necesario).\"\"\"\n        data = json.loads(text_data)",
+        "detail": "quiz_project.quiz.consumers",
+        "documentation": {}
+    },
+    {
+        "label": "Question",
+        "kind": 6,
+        "importPath": "quiz_project.quiz.models",
+        "description": "quiz_project.quiz.models",
+        "peekOfCode": "class Question(models.Model):\n    text = models.CharField(max_length=255)\n    quiz_category = models.CharField(max_length=100)  # Add this if it's missing\n    difficulty = models.CharField(max_length=50, default='easy')\n    def __str__(self):\n        return self.text\nclass Answer(models.Model):\n    question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name=\"answers\")\n    text = models.CharField(max_length=255)\n    is_correct = models.BooleanField(default=False)",
+        "detail": "quiz_project.quiz.models",
+        "documentation": {}
+    },
+    {
+        "label": "Answer",
+        "kind": 6,
+        "importPath": "quiz_project.quiz.models",
+        "description": "quiz_project.quiz.models",
+        "peekOfCode": "class Answer(models.Model):\n    question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name=\"answers\")\n    text = models.CharField(max_length=255)\n    is_correct = models.BooleanField(default=False)\n    def __str__(self):\n        return f\"{self.text} ({'Correcta' if self.is_correct else 'Incorrecta'})\"\nclass Score(models.Model):\n    player_name = models.CharField(max_length=100)\n    points = models.IntegerField()\n    date = models.DateTimeField(auto_now_add=True)",
+        "detail": "quiz_project.quiz.models",
+        "documentation": {}
+    },
+    {
+        "label": "Score",
+        "kind": 6,
+        "importPath": "quiz_project.quiz.models",
+        "description": "quiz_project.quiz.models",
+        "peekOfCode": "class Score(models.Model):\n    player_name = models.CharField(max_length=100)\n    points = models.IntegerField()\n    date = models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        return f\"{self.player_name} - {self.points}\"",
+        "detail": "quiz_project.quiz.models",
+        "documentation": {}
+    },
+    {
+        "label": "websocket_urlpatterns",
+        "kind": 5,
+        "importPath": "quiz_project.quiz.routing",
+        "description": "quiz_project.quiz.routing",
+        "peekOfCode": "websocket_urlpatterns = [\n    re_path(r'ws/quiz/timer/$', QuizTimerConsumer.as_asgi()),\n]",
+        "detail": "quiz_project.quiz.routing",
+        "documentation": {}
+    },
+    {
+        "label": "AnswerSerializer",
+        "kind": 6,
+        "importPath": "quiz_project.quiz.serializers",
+        "description": "quiz_project.quiz.serializers",
+        "peekOfCode": "class AnswerSerializer(serializers.ModelSerializer):\n    \"\"\"Serializa respuestas\"\"\"\n    class Meta:\n        model = Answer\n        fields = '__all__'\nclass QuestionSerializer(serializers.ModelSerializer):\n    \"\"\"Serializa preguntas con sus respuestas\"\"\"\n    answers = AnswerSerializer(many=True, read_only=True)\n    class Meta:\n        model = Question",
+        "detail": "quiz_project.quiz.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "QuestionSerializer",
+        "kind": 6,
+        "importPath": "quiz_project.quiz.serializers",
+        "description": "quiz_project.quiz.serializers",
+        "peekOfCode": "class QuestionSerializer(serializers.ModelSerializer):\n    \"\"\"Serializa preguntas con sus respuestas\"\"\"\n    answers = AnswerSerializer(many=True, read_only=True)\n    class Meta:\n        model = Question\n        fields = '__all__'\nclass ScoreSerializer(serializers.ModelSerializer):\n    \"\"\"Serializa las puntuaciones\"\"\"\n    class Meta:\n        model = Score",
+        "detail": "quiz_project.quiz.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ScoreSerializer",
+        "kind": 6,
+        "importPath": "quiz_project.quiz.serializers",
+        "description": "quiz_project.quiz.serializers",
+        "peekOfCode": "class ScoreSerializer(serializers.ModelSerializer):\n    \"\"\"Serializa las puntuaciones\"\"\"\n    class Meta:\n        model = Score\n        fields = '__all__'",
+        "detail": "quiz_project.quiz.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "quiz_project.quiz.urls",
+        "description": "quiz_project.quiz.urls",
+        "peekOfCode": "urlpatterns = [\n    path('api/', views.api_home, name='api_home'),\n    path('api/questions/', views.get_questions, name='get_questions'),\n    path('api/score/', views.submit_score, name='submit_score'),\n    path('api/ranking/', views.ranking, name='ranking'),\n    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),  # Use the built-in JWT view\n    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),  # Refresh JWT tokens\n    path('api/questions/', views.questions_list, name='questions_list'),\n]",
+        "detail": "quiz_project.quiz.urls",
+        "documentation": {}
+    },
+    {
+        "label": "QuestionListJson",
+        "kind": 6,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "class QuestionListJson(BaseDatatableView):\n    model = Question\n    columns = ['text', 'quiz_category', 'difficulty']  # Columns to display\n    order_columns = ['text', 'quiz_category', 'difficulty']  # Order columns\n    max_display_length = 500  # Maximum number of records to display\n    def get_queryset(self):\n        return Question.objects.all()\n# questions_list\ndef questions_list(request):\n    return QuestionListJson.as_view()(request)",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_questions_from_openai",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "def fetch_questions_from_openai():\n    \"\"\"Fetch questions from OpenAI and cache them with Redis.\"\"\"\n    cached_questions = cache_client.get(\"questions\")\n    if cached_questions:\n        return json.loads(cached_questions)\n    try:\n        response = openai.chat.completions.create(\n            model=\"gpt-4\",\n            messages=[\n                {",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_random_questions",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "def get_random_questions(request):\n    \"\"\"Returns 10 random questions (cached in Redis).\"\"\"\n    cached_questions = cache_client.get(\"random_questions\")\n    if cached_questions:\n        return Response(json.loads(cached_questions))\n    questions = list(Question.objects.all())\n    if len(questions) < 10:\n        return Response({\"error\": \"Not enough questions in the database\"}, status=400)\n    random.shuffle(questions)\n    serialized_questions = QuestionSerializer(questions[:10], many=True).data",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "submit_score",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "def submit_score(request):\n    \"\"\"Stores a player's score.\"\"\"\n    serializer = ScoreSerializer(data=request.data)\n    if serializer.is_valid():\n        serializer.save()\n        return Response({\"message\": \"Score saved successfully\"}, status=201)\n    return Response(serializer.errors, status=400)\n@api_view(['GET'])\ndef get_ranking(request):\n    \"\"\"Returns the top 10 scores.\"\"\"",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_ranking",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "def get_ranking(request):\n    \"\"\"Returns the top 10 scores.\"\"\"\n    scores = Score.objects.order_by('-points')[:10]\n    serializer = ScoreSerializer(scores, many=True)\n    return Response(serializer.data)\ndef api_home(request):\n    \"\"\"API home endpoint.\"\"\"\n    return JsonResponse({\"message\": \"Welcome to the API\"}, status=200)\ndef get_questions(request):\n    \"\"\"Fetch 10 random questions.\"\"\"",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "api_home",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "def api_home(request):\n    \"\"\"API home endpoint.\"\"\"\n    return JsonResponse({\"message\": \"Welcome to the API\"}, status=200)\ndef get_questions(request):\n    \"\"\"Fetch 10 random questions.\"\"\"\n    questions = list(Question.objects.all())\n    if len(questions) < 10:\n        return JsonResponse({\"error\": \"Not enough questions in the database\"}, status=400)\n    random.shuffle(questions)\n    serialized_questions = QuestionSerializer(questions[:10], many=True).data",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_questions",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "def get_questions(request):\n    \"\"\"Fetch 10 random questions.\"\"\"\n    questions = list(Question.objects.all())\n    if len(questions) < 10:\n        return JsonResponse({\"error\": \"Not enough questions in the database\"}, status=400)\n    random.shuffle(questions)\n    serialized_questions = QuestionSerializer(questions[:10], many=True).data\n    return JsonResponse(serialized_questions, safe=False)\ndef ranking(request):\n    \"\"\"Returns the top 10 scores.\"\"\"",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "ranking",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "def ranking(request):\n    \"\"\"Returns the top 10 scores.\"\"\"\n    top_scores = Score.objects.order_by('-points')[:10]\n    serialized_scores = ScoreSerializer(top_scores, many=True).data\n    return JsonResponse(serialized_scores, safe=False)\nclass QuestionListJson(BaseDatatableView):\n    model = Question\n    columns = ['text', 'quiz_category', 'difficulty']  # Columns to display\n    order_columns = ['text', 'quiz_category', 'difficulty']  # Order columns\n    max_display_length = 500  # Maximum number of records to display",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "questions_list",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "def questions_list(request):\n    return QuestionListJson.as_view()(request)",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "openai.api_base",
+        "kind": 5,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "openai.api_base = \"https://api.openai.com/v1\"\nopenai.api_key = settings.OPENAI_API_KEY\n# Redis Cache Setup\ncache_client = redis.StrictRedis(host='localhost', port=6379, db=0, decode_responses=True)\ndef fetch_questions_from_openai():\n    \"\"\"Fetch questions from OpenAI and cache them with Redis.\"\"\"\n    cached_questions = cache_client.get(\"questions\")\n    if cached_questions:\n        return json.loads(cached_questions)\n    try:",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "openai.api_key",
+        "kind": 5,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "openai.api_key = settings.OPENAI_API_KEY\n# Redis Cache Setup\ncache_client = redis.StrictRedis(host='localhost', port=6379, db=0, decode_responses=True)\ndef fetch_questions_from_openai():\n    \"\"\"Fetch questions from OpenAI and cache them with Redis.\"\"\"\n    cached_questions = cache_client.get(\"questions\")\n    if cached_questions:\n        return json.loads(cached_questions)\n    try:\n        response = openai.chat.completions.create(",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "cache_client",
+        "kind": 5,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "cache_client = redis.StrictRedis(host='localhost', port=6379, db=0, decode_responses=True)\ndef fetch_questions_from_openai():\n    \"\"\"Fetch questions from OpenAI and cache them with Redis.\"\"\"\n    cached_questions = cache_client.get(\"questions\")\n    if cached_questions:\n        return json.loads(cached_questions)\n    try:\n        response = openai.chat.completions.create(\n            model=\"gpt-4\",\n            messages=[",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.asgi",
+        "description": "quiz_project.quiz_project.asgi",
+        "peekOfCode": "application = ProtocolTypeRouter({\n    \"http\": get_asgi_application(),\n    \"websocket\": URLRouter(websocket_urlpatterns),\n})",
+        "detail": "quiz_project.quiz_project.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-76qrr=t8$48*3b#mqttn4m1bwl^5s&e%1+juz@0bwa)!)%vi@1'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-76qrr=t8$48*3b#mqttn4m1bwl^5s&e%1+juz@0bwa)!)%vi@1'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    # Daphne primero\n    'daphne',  # Necesario para Channels\n    # Apps de Django\n    'django.contrib.admin',",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    # Daphne primero\n    'daphne',  # Necesario para Channels\n    # Apps de Django\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    # Daphne primero\n    'daphne',  # Necesario para Channels\n    # Apps de Django\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    # Daphne primero\n    'daphne',  # Necesario para Channels\n    # Apps de Django\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',  # Debe estar después de daphne",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "REST_FRAMEWORK",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',\n    ),\n}\nASGI_APPLICATION = 'quiz_project.asgi.application'\nCHANNEL_LAYERS = {\n    \"default\": {\n        \"BACKEND\": \"channels.layers.InMemoryChannelLayer\",  # Usa Redis en producción\n    },",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ASGI_APPLICATION",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "ASGI_APPLICATION = 'quiz_project.asgi.application'\nCHANNEL_LAYERS = {\n    \"default\": {\n        \"BACKEND\": \"channels.layers.InMemoryChannelLayer\",  # Usa Redis en producción\n    },\n}\nCHANNEL_LAYERS = {\n    \"default\": {\n        \"BACKEND\": \"channels_redis.core.RedisChannelLayer\",\n        \"CONFIG\": {",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CHANNEL_LAYERS",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "CHANNEL_LAYERS = {\n    \"default\": {\n        \"BACKEND\": \"channels.layers.InMemoryChannelLayer\",  # Usa Redis en producción\n    },\n}\nCHANNEL_LAYERS = {\n    \"default\": {\n        \"BACKEND\": \"channels_redis.core.RedisChannelLayer\",\n        \"CONFIG\": {\n            \"hosts\": [(\"localhost\", 6379)],",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CHANNEL_LAYERS",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "CHANNEL_LAYERS = {\n    \"default\": {\n        \"BACKEND\": \"channels_redis.core.RedisChannelLayer\",\n        \"CONFIG\": {\n            \"hosts\": [(\"localhost\", 6379)],\n        },\n    },\n}\n# Configuración de Redis para cachear preguntas generadas\nCACHES = {",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CACHES",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "CACHES = {\n    'default': {\n        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',\n    }\n}\nMIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'quiz_project.urls'",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "ROOT_URLCONF = 'quiz_project.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'quiz_project.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.1/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#\nimport environ",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#\nimport environ\nimport os",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#\nimport environ\nimport os\nfrom pathlib import Path\nBASE_DIR = Path(__file__).resolve().parent.parent\nenv = environ.Env()",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n#\nimport environ\nimport os\nfrom pathlib import Path\nBASE_DIR = Path(__file__).resolve().parent.parent\nenv = environ.Env()\nenviron.Env.read_env(os.path.join(BASE_DIR, \".env\"))\nOPENAI_API_KEY = env(\"OPENAI_API_KEY\", default=\"\")  # ✅ Aquí debe coincidir con el views.py",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\nenv = environ.Env()\nenviron.Env.read_env(os.path.join(BASE_DIR, \".env\"))\nOPENAI_API_KEY = env(\"OPENAI_API_KEY\", default=\"\")  # ✅ Aquí debe coincidir con el views.py",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "env",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "env = environ.Env()\nenviron.Env.read_env(os.path.join(BASE_DIR, \".env\"))\nOPENAI_API_KEY = env(\"OPENAI_API_KEY\", default=\"\")  # ✅ Aquí debe coincidir con el views.py",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "OPENAI_API_KEY",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "OPENAI_API_KEY = env(\"OPENAI_API_KEY\", default=\"\")  # ✅ Aquí debe coincidir con el views.py",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.urls",
+        "description": "quiz_project.quiz_project.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api/', include('quiz.urls')),\n]",
+        "detail": "quiz_project.quiz_project.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.wsgi",
+        "description": "quiz_project.quiz_project.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "quiz_project.quiz_project.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "quiz_project.manage",
+        "description": "quiz_project.manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'quiz_project.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "quiz_project.manage",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "kind": 5,
+        "importPath": "rxconfig",
+        "description": "rxconfig",
+        "peekOfCode": "config = rx.Config(\n    app_name=\"quiz_frontend\",\n    api_url=\"http://127.0.0.1:8000/api\"  # Ajusta según la URL de tu backend Django\n)",
+        "detail": "rxconfig",
+        "documentation": {}
+    }
+]
