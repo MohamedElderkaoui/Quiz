@@ -1,45 +1,52 @@
-from django.urls import path
-from . import views
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
-from django.contrib import admin
-from rest_framework.schemas import get_schema_view
-from drf_spectacular.views import (
-    SpectacularAPIView,
-    SpectacularRedocView,
-    SpectacularSwaggerView,
+from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
+from .views import (
+    api_home, get_random_questions, submit_score, get_ranking, get_all_questions,
+    add_question, edit_question, delete_question, add_answer, edit_answer, delete_answer,
+    QuizCategoryViewSet, QuestionViewSet, AnswerViewSet, ScoreViewSet, PublicView
 )
 
-urlpatterns = [
-    # API Home
-    path('api/', views.api_home, name='api_home'),
-    
-    # Questions endpoints:
-    # Use a unique path for each view to avoid conflicts.
-    path('api/questions/all/', views.get_questions, name='get_questions'),
-    path('api/questions/list/', views.questions_list, name='questions_list'),
-    
-    # Score endpoints
-    path('api/score/', views.submit_score, name='submit_score'),
-    path('api/ranking/', views.ranking, name='ranking'),
-    
-    # Public endpoint
-    path('api/public/', views.PublicView.as_view(), name='public_view'),
-    
-    # JWT Authentication endpoints
-    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
-    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-    
-    # OpenAPI Schema (DRF built-in schema view)
-    path("openapi/", get_schema_view(title="Your Project", description="API for all things …"), name="openapi-schema"),
-    
-    # Uncomment the following if you need access to the Django admin
-    # path('admin/', admin.site.urls),
-]
+# ✅ DRF Router Setup for ViewSets
+router = DefaultRouter()
+router.register(r'categories', QuizCategoryViewSet, basename="quizcategory")
+router.register(r'questions', QuestionViewSet, basename="question")
+router.register(r'answers', AnswerViewSet, basename="answer")
+router.register(r'scores', ScoreViewSet, basename="score")
 
-# DRF Spectacular endpoints for schema and documentation
-urlpatterns += [
-    path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
-    path('api/docs/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
-    path('api/schema/swagger-ui/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
-    path('api/schema/redoc/', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
+# ✅ URL Patterns
+urlpatterns = [
+    # 🌍 API Home
+    path('', api_home, name="api-home"),
+
+    # 🎯 Quiz Endpoints
+    path('questions/random/', get_random_questions, name="get-random-questions"),
+    path('questions/all/', get_all_questions, name="get-all-questions"),
+    path('questions/add/', add_question, name="add-question"),
+    path('questions/edit/<int:question_id>/', edit_question, name="edit-question"),
+    path('questions/delete/<int:question_id>/', delete_question, name="delete-question"),
+
+    # 🎯 Answer Endpoints
+    path('answers/add/<int:question_id>/', add_answer, name="add-answer"),
+    path('answers/edit/<int:answer_id>/', edit_answer, name="edit-answer"),
+    path('answers/delete/<int:answer_id>/', delete_answer, name="delete-answer"),
+
+    # 🏆 Scores & Rankings
+    path('scores/submit/', submit_score, name="submit-score"),
+    path('scores/ranking/', get_ranking, name="get-ranking"),
+
+    # 🔐 Authentication (JWT)
+    path('auth/token/', TokenObtainPairView.as_view(), name="token_obtain_pair"),
+    path('auth/token/refresh/', TokenRefreshView.as_view(), name="token_refresh"),
+
+    # 📜 API Schema & Swagger Docs
+    path('schema/', SpectacularAPIView.as_view(), name="schema"),
+    path('docs/', SpectacularSwaggerView.as_view(url_name='schema'), name="swagger-ui"),
+
+    # 🔄 DRF ViewSets (Router)
+    path('', include(router.urls)),
+
+    # 🌍 Public API
+    path('public/', PublicView.as_view(), name="public-view"),
 ]

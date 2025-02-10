@@ -460,7 +460,6 @@
     "expire_date": "2025-02-20T11:22:44.613Z"
   }
 },
-{
   "model": "quiz.question",
   "pk": 1,
   "fields": {

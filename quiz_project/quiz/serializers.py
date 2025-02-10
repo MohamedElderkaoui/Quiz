@@ -1,14 +1,23 @@
 from rest_framework import serializers
-from .models import Question, Answer, Score
+from .models import Question, Answer, Score, QuizCategory
 
-class AnswerSerializer(serializers.ModelSerializer):
-    """Serializa respuestas"""
+class QuizCategorySerializer(serializers.ModelSerializer):
     class Meta:
-        model = Answer
+        model = QuizCategory
         fields = '__all__'
 
+class AnswerSerializer(serializers.ModelSerializer):
+    # Optionally, if you want to use a custom field for the question reference:
+    question_id = serializers.PrimaryKeyRelatedField(
+        queryset=Question.objects.all(), write_only=True, source='question'
+    )
+
+    class Meta:
+        model = Answer
+        fields = ['id', 'text', 'is_correct', 'question_id']
+
 class QuestionSerializer(serializers.ModelSerializer):
-    """Serializa preguntas con sus respuestas"""
+    # Nest answers if needed:
     answers = AnswerSerializer(many=True, read_only=True)
 
     class Meta:
@@ -16,7 +25,6 @@ class QuestionSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class ScoreSerializer(serializers.ModelSerializer):
-    """Serializa las puntuaciones"""
     class Meta:
         model = Score
         fields = '__all__'

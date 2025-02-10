@@ -189,14 +189,20 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'html')
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-#
-import environ
+# settings.py
 import os
+import environ
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-env = environ.Env()
-environ.Env.read_env(os.path.join(BASE_DIR, ".env"))
+# Initialize environment variables
+env = environ.Env(
+    DEBUG=(bool, False)
+)
+environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
-OPENAI_API_KEY = env("OPENAI_API_KEY", default="")  # ✅ Aquí debe coincidir con el views.py
+# Now retrieve your variables
+OPENAI_API_KEY = env('OPENAI_API_KEY')
+
+# Other settings...
