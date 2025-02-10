@@ -136,7 +136,7 @@ Este proyecto se distribuye bajo la **Licencia MIT**. Consulta el archivo [LICEN
 ## Contacto
 Para cualquier duda, sugerencia o reporte de errores, por favor contacta a:
 - **Autor:** Mohamed Elderkaoui
-- **Email:** [correo@ejemplo.com](mailto:correo@ejemplo.com)
+- **Email:** [correo@ejemplo.com](mderkaoui10@gmail.com)
 - **GitHub:** [MohamedElderkaoui](https://github.com/MohamedElderkaoui)
 
 ---
