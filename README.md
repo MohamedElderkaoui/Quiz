@@ -113,7 +113,7 @@ Quiz/
 ├── .vscode/                # Configuraciones para el entorno de desarrollo
 ├── .web/                   # Recursos y configuraciones específicas para web
 ├── assets/                 # Recursos estáticos (imágenes, estilos, etc.)
-├── quiz_frontend/          # Código del frontend (HTML, CSS, JavaScript)
+├── quiz_frontend/          # Código del frontend (PYTHON )
 ├── quiz_project/           # Código del backend (Python y lógica del servidor)
 ├── .gitignore              # Archivos y carpetas a ignorar en Git
 ├── README.md               # Este archivo de documentación
