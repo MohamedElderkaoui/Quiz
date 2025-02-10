@@ -1,4 +1,4 @@
-A continuación te propongo un ejemplo de un README complejo y detallado que puedes utilizar y adaptar para el proyecto "Quiz". Este README abarca desde la descripción general del proyecto hasta la instalación, uso, estructura, contribuciones y licencia.
+# Proyecto Quiz
 
 ---
 
@@ -92,17 +92,22 @@ Desde la carpeta raíz o la correspondiente a `quiz_project`, ejecuta:
 ```bash
 python main.py
 ```
+
 El servidor debería iniciarse y, por defecto, estar accesible en [http://localhost:8000](http://localhost:8000) (ajusta el puerto según la configuración).
 
 ### Ejecutar el Frontend
+
 Puedes abrir el archivo `index.html` ubicado en la carpeta `quiz_frontend` directamente en tu navegador o servirlo mediante un servidor HTTP sencillo:
+
 ```bash
 cd quiz_frontend
 python -m http.server 8001
 ```
+
 Accede a [http://localhost:8001](http://localhost:8001) para visualizar la interfaz.
 
 ## Estructura del Proyecto
+
 ```
 Quiz/
 ├── .vscode/                # Configuraciones para el entorno de desarrollo
@@ -119,22 +124,27 @@ Quiz/
 ```
 
 ## Contribuciones
+
 ¡Las contribuciones son bienvenidas! Para aportar al proyecto, sigue estos pasos:
+
 1. Realiza un fork del repositorio.
 2. Crea una nueva rama para tu funcionalidad o corrección:
-    ```bash
-    git checkout -b feature/nueva-funcionalidad
-    ```
+   ```bash
+   git checkout -b feature/nueva-funcionalidad
+   ```
 3. Realiza tus cambios y haz commits descriptivos.
 4. Envía un pull request explicando en detalle los cambios realizados.
 
 Te invitamos a revisar las [directrices de contribución](CONTRIBUTING.md) y el [Código de Conducta](CODE_OF_CONDUCT.md) para mantener un ambiente colaborativo y respetuoso.
 
 ## Licencia
+
 Este proyecto se distribuye bajo la **Licencia MIT**. Consulta el archivo [LICENSE](LICENSE) para obtener más información sobre los términos y condiciones.
 
 ## Contacto
+
 Para cualquier duda, sugerencia o reporte de errores, por favor contacta a:
+
 - **Autor:** Mohamed Elderkaoui
 - **Email:** [correo@ejemplo.com](mderkaoui10@gmail.com)
 - **GitHub:** [MohamedElderkaoui](https://github.com/MohamedElderkaoui)
