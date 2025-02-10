@@ -3,7 +3,7 @@
 ---
 
 ```markdown
-# Proyecto Quiz
+Proyecto Quiz
 
 Una aplicación interactiva para realizar cuestionarios de conocimiento en diversas áreas. Este proyecto está diseñado para entornos educativos y de entretenimiento, ofreciendo una interfaz responsiva y funcionalidades dinámicas que permiten la creación, administración y realización de quizzes.
 
@@ -24,7 +24,7 @@ Una aplicación interactiva para realizar cuestionarios de conocimiento en diver
 
 ## Descripción
 El proyecto **Quiz** es una aplicación web que permite a los usuarios realizar pruebas interactivas de conocimientos. Se compone de dos módulos principales:
-- **Frontend**: Desarrollado en HTML, CSS y JavaScript, encargado de la experiencia de usuario y la interacción.
+- **Frontend**: Desarrollado enPython (reflex), encargado de la experiencia de usuario y la interacción.
 - **Backend**: Implementado en Python, responsable de la lógica de negocio, gestión de datos y procesamiento de las solicitudes.
 
 Esta separación facilita el mantenimiento y la escalabilidad de la aplicación, permitiendo futuras mejoras y la integración de nuevas funcionalidades.
