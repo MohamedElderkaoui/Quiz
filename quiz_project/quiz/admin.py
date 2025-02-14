@@ -4,7 +4,13 @@ import csv
 from django.urls import path
 from django.shortcuts import redirect
 from django.template.response import TemplateResponse
-from .models import Question, Answer, Score
+from .models import Question, Answer, Score, QuizCategory
+@admin.register(QuizCategory)
+class QuizCategoryAdmin(admin.ModelAdmin):
+    list_display = ('name',)    
+    search_fields = ('name',)
+    ordering = ('name',)
+    
 
 # 🔹 Función para exportar puntuaciones a CSV
 def export_scores_to_csv(modeladmin, request, queryset=None):

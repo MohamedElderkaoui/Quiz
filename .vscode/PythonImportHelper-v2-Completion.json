@@ -44,6 +44,14 @@
         "documentation": {}
     },
     {
+        "label": "BaseCommand",
+        "importPath": "django.core.management.base",
+        "description": "django.core.management.base",
+        "isExtraImport": true,
+        "detail": "django.core.management.base",
+        "documentation": {}
+    },
+    {
         "label": "openai",
         "kind": 6,
         "isExtraImport": true,
@@ -70,6 +78,54 @@
     },
     {
         "label": "QuizCategory",
+        "importPath": "quiz.models",
+        "description": "quiz.models",
+        "isExtraImport": true,
+        "detail": "quiz.models",
+        "documentation": {}
+    },
+    {
+        "label": "QuizCategory",
+        "importPath": "quiz.models",
+        "description": "quiz.models",
+        "isExtraImport": true,
+        "detail": "quiz.models",
+        "documentation": {}
+    },
+    {
+        "label": "Question",
+        "importPath": "quiz.models",
+        "description": "quiz.models",
+        "isExtraImport": true,
+        "detail": "quiz.models",
+        "documentation": {}
+    },
+    {
+        "label": "Answer",
+        "importPath": "quiz.models",
+        "description": "quiz.models",
+        "isExtraImport": true,
+        "detail": "quiz.models",
+        "documentation": {}
+    },
+    {
+        "label": "QuizCategory",
+        "importPath": "quiz.models",
+        "description": "quiz.models",
+        "isExtraImport": true,
+        "detail": "quiz.models",
+        "documentation": {}
+    },
+    {
+        "label": "Question",
+        "importPath": "quiz.models",
+        "description": "quiz.models",
+        "isExtraImport": true,
+        "detail": "quiz.models",
+        "documentation": {}
+    },
+    {
+        "label": "Answer",
         "importPath": "quiz.models",
         "description": "quiz.models",
         "isExtraImport": true,
@@ -126,12 +182,85 @@
         "documentation": {}
     },
     {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "Faker",
+        "importPath": "faker",
+        "description": "faker",
+        "isExtraImport": true,
+        "detail": "faker",
+        "documentation": {}
+    },
+    {
+        "label": "Faker",
+        "importPath": "faker",
+        "description": "faker",
+        "isExtraImport": true,
+        "detail": "faker",
+        "documentation": {}
+    },
+    {
         "label": "django.db.models.deletion",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "django.db.models.deletion",
         "description": "django.db.models.deletion",
         "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
         "documentation": {}
     },
     {
@@ -296,11 +425,27 @@
         "documentation": {}
     },
     {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
         "label": "AppConfig",
         "importPath": "django.apps",
         "description": "django.apps",
         "isExtraImport": true,
         "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
         "documentation": {}
     },
     {
@@ -376,15 +521,6 @@
         "documentation": {}
     },
     {
-        "label": "random",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "random",
-        "description": "random",
-        "detail": "random",
-        "documentation": {}
-    },
-    {
         "label": "settings",
         "importPath": "django.conf",
         "description": "django.conf",
@@ -454,14 +590,6 @@
         "description": "rest_framework_simplejwt.authentication",
         "isExtraImport": true,
         "detail": "rest_framework_simplejwt.authentication",
-        "documentation": {}
-    },
-    {
-        "label": "APIView",
-        "importPath": "rest_framework.views",
-        "description": "rest_framework.views",
-        "isExtraImport": true,
-        "detail": "rest_framework.views",
         "documentation": {}
     },
     {
@@ -620,6 +748,33 @@
         "documentation": {}
     },
     {
+        "label": "Command",
+        "kind": 6,
+        "importPath": "quiz_project.quiz.management.commands.populate_db",
+        "description": "quiz_project.quiz.management.commands.populate_db",
+        "peekOfCode": "class Command(BaseCommand):\n    help = 'Populates the database with fake data'\n    def handle(self, *args, **kwargs):\n        # Call the function that populates the data\n        create_fake_data()\n        self.stdout.write(self.style.SUCCESS('Successfully populated the database with fake data'))",
+        "detail": "quiz_project.quiz.management.commands.populate_db",
+        "documentation": {}
+    },
+    {
+        "label": "create_fake_data",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.management.commands.populate_db",
+        "description": "quiz_project.quiz.management.commands.populate_db",
+        "peekOfCode": "def create_fake_data():\n    # Create 50 quiz categories if they don't exist\n    for _ in range(50):\n        category_name = fake.word().capitalize()\n        if not QuizCategory.objects.filter(name=category_name).exists():\n            category = QuizCategory.objects.create(name=category_name)\n            # Create 50 questions per category (total of 2500 questions)\n            difficulties = ['easy', 'medium', 'hard']\n            for _ in range(50):\n                question_text = fake.sentence()",
+        "detail": "quiz_project.quiz.management.commands.populate_db",
+        "documentation": {}
+    },
+    {
+        "label": "fake",
+        "kind": 5,
+        "importPath": "quiz_project.quiz.management.commands.populate_db",
+        "description": "quiz_project.quiz.management.commands.populate_db",
+        "peekOfCode": "fake = Faker()\ndef create_fake_data():\n    # Create 50 quiz categories if they don't exist\n    for _ in range(50):\n        category_name = fake.word().capitalize()\n        if not QuizCategory.objects.filter(name=category_name).exists():\n            category = QuizCategory.objects.create(name=category_name)\n            # Create 50 questions per category (total of 2500 questions)\n            difficulties = ['easy', 'medium', 'hard']\n            for _ in range(50):",
+        "detail": "quiz_project.quiz.management.commands.populate_db",
+        "documentation": {}
+    },
+    {
         "label": "Migration",
         "kind": 6,
         "importPath": "quiz_project.quiz.migrations.0001_initial",
@@ -629,12 +784,66 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "quiz_project.quiz.migrations.0002_alter_quizcategory_name",
+        "description": "quiz_project.quiz.migrations.0002_alter_quizcategory_name",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('quiz', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='quizcategory',\n            name='name',\n            field=models.CharField(max_length=100),\n        ),",
+        "detail": "quiz_project.quiz.migrations.0002_alter_quizcategory_name",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "quiz_project.quiz.migrations.0003_answer_unique_correct_answer",
+        "description": "quiz_project.quiz.migrations.0003_answer_unique_correct_answer",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('quiz', '0002_alter_quizcategory_name'),\n    ]\n    operations = [\n        migrations.AddConstraint(\n            model_name='answer',\n            constraint=models.UniqueConstraint(fields=('question', 'is_correct'), name='unique_correct_answer'),\n        ),\n    ]",
+        "detail": "quiz_project.quiz.migrations.0003_answer_unique_correct_answer",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "quiz_project.quiz.migrations.0004_remove_answer_unique_correct_answer_and_more",
+        "description": "quiz_project.quiz.migrations.0004_remove_answer_unique_correct_answer_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('quiz', '0003_answer_unique_correct_answer'),\n    ]\n    operations = [\n        migrations.RemoveConstraint(\n            model_name='answer',\n            name='unique_correct_answer',\n        ),\n        migrations.AlterField(",
+        "detail": "quiz_project.quiz.migrations.0004_remove_answer_unique_correct_answer_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "create_fake_data",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.utils.utils",
+        "description": "quiz_project.quiz.utils.utils",
+        "peekOfCode": "def create_fake_data():\n    # Create 50 quiz categories\n    categories = []\n    for _ in range(50):\n        category = QuizCategory.objects.create(name=fake.word().capitalize())\n        categories.append(category)\n    # Create 50 questions per category (total of 2500 questions)\n    difficulties = ['easy', 'medium', 'hard']\n    for category in categories:\n        for _ in range(50):",
+        "detail": "quiz_project.quiz.utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "fake",
+        "kind": 5,
+        "importPath": "quiz_project.quiz.utils.utils",
+        "description": "quiz_project.quiz.utils.utils",
+        "peekOfCode": "fake = Faker()\ndef create_fake_data():\n    # Create 50 quiz categories\n    categories = []\n    for _ in range(50):\n        category = QuizCategory.objects.create(name=fake.word().capitalize())\n        categories.append(category)\n    # Create 50 questions per category (total of 2500 questions)\n    difficulties = ['easy', 'medium', 'hard']\n    for category in categories:",
+        "detail": "quiz_project.quiz.utils.utils",
+        "documentation": {}
+    },
+    {
         "label": "category_questions_data",
         "kind": 5,
         "importPath": "quiz_project.quiz.ad",
         "description": "quiz_project.quiz.ad",
         "peekOfCode": "category_questions_data = {\n    \"Science\": [\n    (\"What is the chemical symbol for water?\", [(\"H2O\", True), (\"O2\", False), (\"CO2\", False)]),\n    (\"What is the largest planet in our solar system?\", [(\"Jupiter\", True), (\"Saturn\", False), (\"Earth\", False)]),\n    (\"What is the chemical symbol for gold?\", [(\"Au\", True), (\"Ag\", False), (\"Fe\", False)]),\n    (\"Who is known as the father of modern physics?\", [(\"Albert Einstein\", True), (\"Isaac Newton\", False), (\"Galileo Galilei\", False)]),\n    (\"What is the chemical symbol for oxygen?\", [(\"O\", True), (\"O2\", False), (\"Ox\", False)]),\n    (\"What gas do plants absorb from the atmosphere?\", [(\"Carbon Dioxide\", True), (\"Oxygen\", False), (\"Nitrogen\", False)]),\n    (\"Which element has the chemical symbol He?\", [(\"Helium\", True), (\"Hydrogen\", False), (\"Hafnium\", False)]),\n    (\"What is the center of an atom called?\", [(\"Nucleus\", True), (\"Electron\", False), (\"Proton\", False)]),",
         "detail": "quiz_project.quiz.ad",
+        "documentation": {}
+    },
+    {
+        "label": "QuizCategoryAdmin",
+        "kind": 6,
+        "importPath": "quiz_project.quiz.admin",
+        "description": "quiz_project.quiz.admin",
+        "peekOfCode": "class QuizCategoryAdmin(admin.ModelAdmin):\n    list_display = ('name',)    \n    search_fields = ('name',)\n    ordering = ('name',)\n# 🔹 Función para exportar puntuaciones a CSV\ndef export_scores_to_csv(modeladmin, request, queryset=None):\n    response = HttpResponse(content_type='text/csv')\n    response['Content-Disposition'] = 'attachment; filename=\"scores.csv\"'\n    writer = csv.writer(response, csv.excel, delimiter=',')\n    # Escribir encabezados",
+        "detail": "quiz_project.quiz.admin",
         "documentation": {}
     },
     {
@@ -777,7 +986,7 @@
         "kind": 6,
         "importPath": "quiz_project.quiz.models",
         "description": "quiz_project.quiz.models",
-        "peekOfCode": "class QuizCategory(models.Model):\n    name = models.CharField(max_length=100, unique=True)\n    def __str__(self):\n        return self.name\nclass Question(models.Model):\n    EASY = 'easy'\n    MEDIUM = 'medium'\n    HARD = 'hard'\n    DIFFICULTY_CHOICES = [\n        (EASY, 'Easy'),",
+        "peekOfCode": "class QuizCategory(models.Model):\n    name = models.CharField(max_length=255, unique=True)\n    def __str__(self):\n        return self.name\nclass Question(models.Model):\n    # Define difficulty levels\n    EASY = 'easy'\n    MEDIUM = 'medium'\n    HARD = 'hard'\n    DIFFICULTY_CHOICES = [",
         "detail": "quiz_project.quiz.models",
         "documentation": {}
     },
@@ -786,7 +995,7 @@
         "kind": 6,
         "importPath": "quiz_project.quiz.models",
         "description": "quiz_project.quiz.models",
-        "peekOfCode": "class Question(models.Model):\n    EASY = 'easy'\n    MEDIUM = 'medium'\n    HARD = 'hard'\n    DIFFICULTY_CHOICES = [\n        (EASY, 'Easy'),\n        (MEDIUM, 'Medium'),\n        (HARD, 'Hard'),\n    ]\n    text = models.CharField(max_length=255)",
+        "peekOfCode": "class Question(models.Model):\n    # Define difficulty levels\n    EASY = 'easy'\n    MEDIUM = 'medium'\n    HARD = 'hard'\n    DIFFICULTY_CHOICES = [\n        (EASY, 'Easy'),\n        (MEDIUM, 'Medium'),\n        (HARD, 'Hard'),\n    ]",
         "detail": "quiz_project.quiz.models",
         "documentation": {}
     },
@@ -795,7 +1004,7 @@
         "kind": 6,
         "importPath": "quiz_project.quiz.models",
         "description": "quiz_project.quiz.models",
-        "peekOfCode": "class Answer(models.Model):\n    question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name=\"answers\")\n    text = models.CharField(max_length=255)\n    is_correct = models.BooleanField(default=False)\n    def __str__(self):\n        return f\"{self.text} ({'Correct' if self.is_correct else 'Incorrect'})\"\nclass Score(models.Model):\n    player_name = models.CharField(max_length=100)\n    points = models.IntegerField()\n    date = models.DateTimeField(auto_now_add=True)",
+        "peekOfCode": "class Answer(models.Model):\n    question = models.ForeignKey(\n        Question, \n        on_delete=models.CASCADE, \n        related_name='answers'\n    )\n    text = models.TextField()\n    is_correct = models.BooleanField(default=False)\n    def __str__(self):\n        status = \"Correct\" if self.is_correct else \"Incorrect\"",
         "detail": "quiz_project.quiz.models",
         "documentation": {}
     },
@@ -872,11 +1081,20 @@
         "documentation": {}
     },
     {
+        "label": "PublicView",
+        "kind": 6,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "class PublicView(viewsets.ViewSet):\n    \"\"\"A public view for testing API access.\"\"\"\n    permission_classes = [AllowAny]\n    def list(self, request):\n        return Response({\"message\": \"This is a public endpoint!\"})\n# 🚀 ViewSets for DRF Router\nclass QuizCategoryViewSet(viewsets.ModelViewSet):\n    queryset = QuizCategory.objects.all()\n    serializer_class = QuizCategorySerializer\nclass QuestionViewSet(viewsets.ModelViewSet):",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
         "label": "QuizCategoryViewSet",
         "kind": 6,
         "importPath": "quiz_project.quiz.views",
         "description": "quiz_project.quiz.views",
-        "peekOfCode": "class QuizCategoryViewSet(viewsets.ModelViewSet):\n    \"\"\"ViewSet for Quiz Categories.\"\"\"\n    queryset = QuizCategory.objects.all()\n    serializer_class = QuizCategorySerializer\nclass QuestionViewSet(viewsets.ModelViewSet):\n    \"\"\"ViewSet for Questions.\"\"\"\n    queryset = Question.objects.all()\n    serializer_class = QuestionSerializer\nclass AnswerViewSet(viewsets.ModelViewSet):\n    \"\"\"ViewSet for Answers.\"\"\"",
+        "peekOfCode": "class QuizCategoryViewSet(viewsets.ModelViewSet):\n    queryset = QuizCategory.objects.all()\n    serializer_class = QuizCategorySerializer\nclass QuestionViewSet(viewsets.ModelViewSet):\n    queryset = Question.objects.all()\n    serializer_class = QuestionSerializer\nclass AnswerViewSet(viewsets.ModelViewSet):\n    queryset = Answer.objects.all()\n    serializer_class = AnswerSerializer\nclass ScoreViewSet(viewsets.ModelViewSet):",
         "detail": "quiz_project.quiz.views",
         "documentation": {}
     },
@@ -885,7 +1103,7 @@
         "kind": 6,
         "importPath": "quiz_project.quiz.views",
         "description": "quiz_project.quiz.views",
-        "peekOfCode": "class QuestionViewSet(viewsets.ModelViewSet):\n    \"\"\"ViewSet for Questions.\"\"\"\n    queryset = Question.objects.all()\n    serializer_class = QuestionSerializer\nclass AnswerViewSet(viewsets.ModelViewSet):\n    \"\"\"ViewSet for Answers.\"\"\"\n    queryset = Answer.objects.all()\n    serializer_class = AnswerSerializer\nclass ScoreViewSet(viewsets.ModelViewSet):\n    \"\"\"ViewSet for Scores.\"\"\"",
+        "peekOfCode": "class QuestionViewSet(viewsets.ModelViewSet):\n    queryset = Question.objects.all()\n    serializer_class = QuestionSerializer\nclass AnswerViewSet(viewsets.ModelViewSet):\n    queryset = Answer.objects.all()\n    serializer_class = AnswerSerializer\nclass ScoreViewSet(viewsets.ModelViewSet):\n    queryset = Score.objects.all()\n    serializer_class = ScoreSerializer",
         "detail": "quiz_project.quiz.views",
         "documentation": {}
     },
@@ -894,25 +1112,7 @@
         "kind": 6,
         "importPath": "quiz_project.quiz.views",
         "description": "quiz_project.quiz.views",
-        "peekOfCode": "class AnswerViewSet(viewsets.ModelViewSet):\n    \"\"\"ViewSet for Answers.\"\"\"\n    queryset = Answer.objects.all()\n    serializer_class = AnswerSerializer\nclass ScoreViewSet(viewsets.ModelViewSet):\n    \"\"\"ViewSet for Scores.\"\"\"\n    queryset = Score.objects.all()\n    serializer_class = ScoreSerializer\n# ✅ Public API View (No Authentication)\nclass PublicView(APIView):",
-        "detail": "quiz_project.quiz.views",
-        "documentation": {}
-    },
-    {
-        "label": "ScoreViewSet",
-        "kind": 6,
-        "importPath": "quiz_project.quiz.views",
-        "description": "quiz_project.quiz.views",
-        "peekOfCode": "class ScoreViewSet(viewsets.ModelViewSet):\n    \"\"\"ViewSet for Scores.\"\"\"\n    queryset = Score.objects.all()\n    serializer_class = ScoreSerializer\n# ✅ Public API View (No Authentication)\nclass PublicView(APIView):\n    \"\"\"A public API view that does not require authentication.\"\"\"\n    permission_classes = [AllowAny]\n    def get(self, request):\n        return Response({\"message\": \"This is a public endpoint!\"})",
-        "detail": "quiz_project.quiz.views",
-        "documentation": {}
-    },
-    {
-        "label": "PublicView",
-        "kind": 6,
-        "importPath": "quiz_project.quiz.views",
-        "description": "quiz_project.quiz.views",
-        "peekOfCode": "class PublicView(APIView):\n    \"\"\"A public API view that does not require authentication.\"\"\"\n    permission_classes = [AllowAny]\n    def get(self, request):\n        return Response({\"message\": \"This is a public endpoint!\"})\nclass ScoreViewSet(viewsets.ModelViewSet):\n    queryset = Score.objects.all()\n    serializer_class = ScoreSerializer",
+        "peekOfCode": "class AnswerViewSet(viewsets.ModelViewSet):\n    queryset = Answer.objects.all()\n    serializer_class = AnswerSerializer\nclass ScoreViewSet(viewsets.ModelViewSet):\n    queryset = Score.objects.all()\n    serializer_class = ScoreSerializer",
         "detail": "quiz_project.quiz.views",
         "documentation": {}
     },
@@ -930,16 +1130,7 @@
         "kind": 2,
         "importPath": "quiz_project.quiz.views",
         "description": "quiz_project.quiz.views",
-        "peekOfCode": "def fetch_questions_from_openai():\n    \"\"\"Fetches general knowledge questions from OpenAI and caches them for 1 hour.\"\"\"\n    return cache.get_or_set(\n        \"questions\",\n        lambda: fetch_from_openai_helper(),\n        timeout=3600\n    )\ndef fetch_from_openai_helper():\n    \"\"\"Helper function to fetch questions from OpenAI.\"\"\"\n    try:",
-        "detail": "quiz_project.quiz.views",
-        "documentation": {}
-    },
-    {
-        "label": "fetch_from_openai_helper",
-        "kind": 2,
-        "importPath": "quiz_project.quiz.views",
-        "description": "quiz_project.quiz.views",
-        "peekOfCode": "def fetch_from_openai_helper():\n    \"\"\"Helper function to fetch questions from OpenAI.\"\"\"\n    try:\n        response = openai.ChatCompletion.create(\n            model=\"gpt-4\",\n            messages=[{\"role\": \"user\", \"content\": \"Generate 5 general knowledge questions with 3 answer choices and one correct answer. Return JSON.\"}]\n        )\n        return json.loads(response[\"choices\"][0][\"message\"][\"content\"])\n    except Exception as e:\n        print(f\"Error fetching questions: {e}\")",
+        "peekOfCode": "def fetch_questions_from_openai():\n    \"\"\"Fetches general knowledge questions from OpenAI and caches them for 1 hour.\"\"\"\n    cached_questions = cache.get(\"questions\")\n    if cached_questions:\n        return cached_questions\n    try:\n        response = openai.ChatCompletion.create(\n            model=\"gpt-4\",\n            messages=[{\"role\": \"user\", \"content\": \"Generate 5 general knowledge questions with 3 options and one correct answer. JSON format.\"}],\n            temperature=0.7",
         "detail": "quiz_project.quiz.views",
         "documentation": {}
     },
@@ -948,7 +1139,7 @@
         "kind": 2,
         "importPath": "quiz_project.quiz.views",
         "description": "quiz_project.quiz.views",
-        "peekOfCode": "def api_home(request):\n    \"\"\"API home endpoint.\"\"\"\n    return JsonResponse({\"message\": \"Welcome to the API\"}, status=200)\n# ✅ Get 10 Random Questions\n@api_view(['GET'])\ndef get_random_questions(request):\n    \"\"\"Returns 10 random questions (cached for performance).\"\"\"\n    cached_questions = cache.get(\"random_questions\")\n    if cached_questions:\n        return Response(json.loads(cached_questions))",
+        "peekOfCode": "def api_home(request):\n    return JsonResponse({\"message\": \"Welcome to the Quiz API!\"})\n# 🎯 Get 10 Random Questions\n@api_view(['GET'])\n@permission_classes([AllowAny])\ndef get_random_questions(request):\n    \"\"\"Returns 10 random questions with caching.\"\"\"\n    cached_questions = cache.get(\"random_questions\")\n    if cached_questions:\n        return Response(json.loads(cached_questions))",
         "detail": "quiz_project.quiz.views",
         "documentation": {}
     },
@@ -957,25 +1148,7 @@
         "kind": 2,
         "importPath": "quiz_project.quiz.views",
         "description": "quiz_project.quiz.views",
-        "peekOfCode": "def get_random_questions(request):\n    \"\"\"Returns 10 random questions (cached for performance).\"\"\"\n    cached_questions = cache.get(\"random_questions\")\n    if cached_questions:\n        return Response(json.loads(cached_questions))\n    questions = list(Question.objects.all())\n    if len(questions) < 10:\n        return Response({\"error\": \"Not enough questions in the database\"}, status=400)\n    random.shuffle(questions)\n    serialized_questions = QuestionSerializer(questions[:10], many=True).data",
-        "detail": "quiz_project.quiz.views",
-        "documentation": {}
-    },
-    {
-        "label": "submit_score",
-        "kind": 2,
-        "importPath": "quiz_project.quiz.views",
-        "description": "quiz_project.quiz.views",
-        "peekOfCode": "def submit_score(request):\n    \"\"\"Stores a player's score.\"\"\"\n    serializer = ScoreSerializer(data=request.data)\n    if serializer.is_valid():\n        serializer.save()\n        return Response({\"message\": \"Score saved successfully\"}, status=201)\n    return Response(serializer.errors, status=400)\n# ✅ Get Top 10 Rankings\n@api_view(['GET'])\ndef get_ranking(request):",
-        "detail": "quiz_project.quiz.views",
-        "documentation": {}
-    },
-    {
-        "label": "get_ranking",
-        "kind": 2,
-        "importPath": "quiz_project.quiz.views",
-        "description": "quiz_project.quiz.views",
-        "peekOfCode": "def get_ranking(request):\n    \"\"\"Returns the top 10 scores.\"\"\"\n    scores = Score.objects.order_by('-points')[:10]\n    serializer = ScoreSerializer(scores, many=True)\n    return Response(serializer.data)\n# ✅ Get All Questions\n@api_view(['GET'])\ndef get_all_questions(request):\n    \"\"\"Returns all questions.\"\"\"\n    questions = Question.objects.all()",
+        "peekOfCode": "def get_random_questions(request):\n    \"\"\"Returns 10 random questions with caching.\"\"\"\n    cached_questions = cache.get(\"random_questions\")\n    if cached_questions:\n        return Response(json.loads(cached_questions))\n    questions = list(Question.objects.all())\n    if len(questions) < 10:\n        return Response({\"error\": \"Not enough questions available.\"}, status=400)\n    random.shuffle(questions)\n    selected_questions = QuestionSerializer(questions[:10], many=True).data",
         "detail": "quiz_project.quiz.views",
         "documentation": {}
     },
@@ -984,7 +1157,25 @@
         "kind": 2,
         "importPath": "quiz_project.quiz.views",
         "description": "quiz_project.quiz.views",
-        "peekOfCode": "def get_all_questions(request):\n    \"\"\"Returns all questions.\"\"\"\n    questions = Question.objects.all()\n    serializer = QuestionSerializer(questions, many=True)\n    return Response(serializer.data)\n# ✅ Add a New Question (Protected)\n@api_view(['POST'])\n@authentication_classes([JWTAuthentication])\n@permission_classes([IsAuthenticated])\ndef add_question(request):",
+        "peekOfCode": "def get_all_questions(request):\n    \"\"\"Retrieve all questions.\"\"\"\n    questions = Question.objects.all()\n    serializer = QuestionSerializer(questions, many=True)\n    return Response(serializer.data)\n# 🏆 Get Top 10 Rankings\n@api_view(['GET'])\n@permission_classes([AllowAny])\ndef get_ranking(request):\n    \"\"\"Retrieve the top 10 scores.\"\"\"",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_ranking",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "def get_ranking(request):\n    \"\"\"Retrieve the top 10 scores.\"\"\"\n    scores = Score.objects.order_by('-points')[:10]\n    serializer = ScoreSerializer(scores, many=True)\n    return Response(serializer.data)\n# 🔒 Submit Player's Score (Protected)\n@api_view(['POST'])\n@authentication_classes([JWTAuthentication])\n@permission_classes([IsAuthenticated])\ndef submit_score(request):",
+        "detail": "quiz_project.quiz.views",
+        "documentation": {}
+    },
+    {
+        "label": "submit_score",
+        "kind": 2,
+        "importPath": "quiz_project.quiz.views",
+        "description": "quiz_project.quiz.views",
+        "peekOfCode": "def submit_score(request):\n    \"\"\"Submit a player's score.\"\"\"\n    serializer = ScoreSerializer(data=request.data)\n    if serializer.is_valid():\n        serializer.save()\n        return Response({\"message\": \"Score submitted successfully!\"}, status=status.HTTP_201_CREATED)\n    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)\n# 🛠️ Add a New Question (Protected)\n@api_view(['POST'])\n@authentication_classes([JWTAuthentication])",
         "detail": "quiz_project.quiz.views",
         "documentation": {}
     },
@@ -993,7 +1184,7 @@
         "kind": 2,
         "importPath": "quiz_project.quiz.views",
         "description": "quiz_project.quiz.views",
-        "peekOfCode": "def add_question(request):\n    \"\"\"Adds a new question.\"\"\"\n    serializer = QuestionSerializer(data=request.data)\n    if serializer.is_valid():\n        serializer.save()\n        return Response({\"message\": \"Question added successfully\"}, status=201)\n    return Response(serializer.errors, status=400)\n# ✅ Edit an Existing Question (Protected)\n@api_view(['PUT'])\n@authentication_classes([JWTAuthentication])",
+        "peekOfCode": "def add_question(request):\n    \"\"\"Add a new question.\"\"\"\n    serializer = QuestionSerializer(data=request.data)\n    if serializer.is_valid():\n        serializer.save()\n        cache.delete(\"random_questions\")  # Invalidate cache\n        return Response({\"message\": \"Question added successfully!\"}, status=status.HTTP_201_CREATED)\n    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)\n# 🛠️ Edit an Existing Question (Protected)\n@api_view(['PUT'])",
         "detail": "quiz_project.quiz.views",
         "documentation": {}
     },
@@ -1002,7 +1193,7 @@
         "kind": 2,
         "importPath": "quiz_project.quiz.views",
         "description": "quiz_project.quiz.views",
-        "peekOfCode": "def edit_question(request, question_id):\n    \"\"\"Edits an existing question.\"\"\"\n    question = get_object_or_404(Question, id=question_id)\n    serializer = QuestionSerializer(question, data=request.data, partial=True)\n    if serializer.is_valid():\n        serializer.save()\n        return Response({\"message\": \"Question updated successfully\"}, status=200)\n    return Response(serializer.errors, status=400)\n# ✅ Delete a Question (Protected)\n@api_view(['DELETE'])",
+        "peekOfCode": "def edit_question(request, question_id):\n    \"\"\"Edit an existing question.\"\"\"\n    question = get_object_or_404(Question, id=question_id)\n    serializer = QuestionSerializer(question, data=request.data, partial=True)\n    if serializer.is_valid():\n        serializer.save()\n        cache.delete(\"random_questions\")  # Invalidate cache\n        return Response({\"message\": \"Question updated successfully!\"}, status=status.HTTP_200_OK)\n    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)\n# 🗑️ Delete a Question (Protected)",
         "detail": "quiz_project.quiz.views",
         "documentation": {}
     },
@@ -1011,7 +1202,7 @@
         "kind": 2,
         "importPath": "quiz_project.quiz.views",
         "description": "quiz_project.quiz.views",
-        "peekOfCode": "def delete_question(request, question_id):\n    \"\"\"Deletes a question.\"\"\"\n    question = get_object_or_404(Question, id=question_id)\n    question.delete()\n    return Response({\"message\": \"Question deleted successfully\"}, status=204)\n# ✅ Add an Answer to a Question (Protected)\n@api_view(['POST'])\n@authentication_classes([JWTAuthentication])\n@permission_classes([IsAuthenticated])\ndef add_answer(request, question_id):",
+        "peekOfCode": "def delete_question(request, question_id):\n    \"\"\"Delete a question.\"\"\"\n    question = get_object_or_404(Question, id=question_id)\n    question.delete()\n    cache.delete(\"random_questions\")  # Invalidate cache\n    return Response({\"message\": \"Question deleted successfully!\"}, status=status.HTTP_204_NO_CONTENT)\n# 🛠️ Add an Answer to a Question (Protected)\n@api_view(['POST'])\n@authentication_classes([JWTAuthentication])\n@permission_classes([IsAuthenticated])",
         "detail": "quiz_project.quiz.views",
         "documentation": {}
     },
@@ -1020,7 +1211,7 @@
         "kind": 2,
         "importPath": "quiz_project.quiz.views",
         "description": "quiz_project.quiz.views",
-        "peekOfCode": "def add_answer(request, question_id):\n    \"\"\"Adds an answer for a question.\"\"\"\n    question = get_object_or_404(Question, id=question_id)\n    data = request.data.copy()\n    data[\"question\"] = question.id  # Assign question ID\n    serializer = AnswerSerializer(data=data)\n    if serializer.is_valid():\n        serializer.save()\n        return Response({\"message\": \"Answer added successfully\"}, status=201)\n    return Response(serializer.errors, status=400)",
+        "peekOfCode": "def add_answer(request, question_id):\n    \"\"\"Add an answer to a question.\"\"\"\n    question = get_object_or_404(Question, id=question_id)\n    data = request.data.copy()\n    data['question'] = question.id\n    serializer = AnswerSerializer(data=data)\n    if serializer.is_valid():\n        serializer.save()\n        return Response({\"message\": \"Answer added successfully!\"}, status=status.HTTP_201_CREATED)\n    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)",
         "detail": "quiz_project.quiz.views",
         "documentation": {}
     },
@@ -1029,7 +1220,7 @@
         "kind": 2,
         "importPath": "quiz_project.quiz.views",
         "description": "quiz_project.quiz.views",
-        "peekOfCode": "def edit_answer(request, answer_id):\n    \"\"\"Edits an existing answer.\"\"\"\n    answer = get_object_or_404(Answer, id=answer_id)\n    serializer = AnswerSerializer(answer, data=request.data, partial=True)\n    if serializer.is_valid():\n        serializer.save()\n        return Response({\"message\": \"Answer updated successfully\"}, status=200)\n    return Response(serializer.errors, status=400)\n# ✅ Delete an Answer (Protected)\n@api_view(['DELETE'])",
+        "peekOfCode": "def edit_answer(request, answer_id):\n    \"\"\"Edit an existing answer.\"\"\"\n    answer = get_object_or_404(Answer, id=answer_id)\n    serializer = AnswerSerializer(answer, data=request.data, partial=True)\n    if serializer.is_valid():\n        serializer.save()\n        return Response({\"message\": \"Answer updated successfully!\"}, status=status.HTTP_200_OK)\n    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)\n# 🗑️ Delete an Answer (Protected)\n@api_view(['DELETE'])",
         "detail": "quiz_project.quiz.views",
         "documentation": {}
     },
@@ -1038,7 +1229,7 @@
         "kind": 2,
         "importPath": "quiz_project.quiz.views",
         "description": "quiz_project.quiz.views",
-        "peekOfCode": "def delete_answer(request, answer_id):\n    \"\"\"Deletes an answer.\"\"\"\n    answer = get_object_or_404(Answer, id=answer_id)\n    answer.delete()\n    return Response({\"message\": \"Answer deleted successfully\"}, status=204)\n# ✅ ViewSets for DRF Router\nclass QuizCategoryViewSet(viewsets.ModelViewSet):\n    \"\"\"ViewSet for Quiz Categories.\"\"\"\n    queryset = QuizCategory.objects.all()\n    serializer_class = QuizCategorySerializer",
+        "peekOfCode": "def delete_answer(request, answer_id):\n    \"\"\"Delete an answer.\"\"\"\n    answer = get_object_or_404(Answer, id=answer_id)\n    answer.delete()\n    return Response({\"message\": \"Answer deleted successfully!\"}, status=status.HTTP_204_NO_CONTENT)\n# 🌍 Public API View\nclass PublicView(viewsets.ViewSet):\n    \"\"\"A public view for testing API access.\"\"\"\n    permission_classes = [AllowAny]\n    def list(self, request):",
         "detail": "quiz_project.quiz.views",
         "documentation": {}
     },
@@ -1047,7 +1238,7 @@
         "kind": 5,
         "importPath": "quiz_project.quiz.views",
         "description": "quiz_project.quiz.views",
-        "peekOfCode": "openai.api_base = \"https://api.openai.com/v1\"\nopenai.api_key = settings.OPENAI_API_KEY\n# ✅ Fetch Questions from OpenAI with Caching\ndef fetch_questions_from_openai():\n    \"\"\"Fetches general knowledge questions from OpenAI and caches them for 1 hour.\"\"\"\n    return cache.get_or_set(\n        \"questions\",\n        lambda: fetch_from_openai_helper(),\n        timeout=3600\n    )",
+        "peekOfCode": "openai.api_base = \"https://api.openai.com/v1\"\nopenai.api_key = settings.OPENAI_API_KEY\n# 🔍 Helper to Fetch Questions from OpenAI with Caching\ndef fetch_questions_from_openai():\n    \"\"\"Fetches general knowledge questions from OpenAI and caches them for 1 hour.\"\"\"\n    cached_questions = cache.get(\"questions\")\n    if cached_questions:\n        return cached_questions\n    try:\n        response = openai.ChatCompletion.create(",
         "detail": "quiz_project.quiz.views",
         "documentation": {}
     },
@@ -1056,7 +1247,7 @@
         "kind": 5,
         "importPath": "quiz_project.quiz.views",
         "description": "quiz_project.quiz.views",
-        "peekOfCode": "openai.api_key = settings.OPENAI_API_KEY\n# ✅ Fetch Questions from OpenAI with Caching\ndef fetch_questions_from_openai():\n    \"\"\"Fetches general knowledge questions from OpenAI and caches them for 1 hour.\"\"\"\n    return cache.get_or_set(\n        \"questions\",\n        lambda: fetch_from_openai_helper(),\n        timeout=3600\n    )\ndef fetch_from_openai_helper():",
+        "peekOfCode": "openai.api_key = settings.OPENAI_API_KEY\n# 🔍 Helper to Fetch Questions from OpenAI with Caching\ndef fetch_questions_from_openai():\n    \"\"\"Fetches general knowledge questions from OpenAI and caches them for 1 hour.\"\"\"\n    cached_questions = cache.get(\"questions\")\n    if cached_questions:\n        return cached_questions\n    try:\n        response = openai.ChatCompletion.create(\n            model=\"gpt-4\",",
         "detail": "quiz_project.quiz.views",
         "documentation": {}
     },
@@ -1299,7 +1490,7 @@
         "kind": 5,
         "importPath": "quiz_project.quiz_project.settings",
         "description": "quiz_project.quiz_project.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Initialize environment variables\nenv = environ.Env(\n    DEBUG=(bool, False)\n)\nenviron.Env.read_env(os.path.join(BASE_DIR, '.env'))\n# Now retrieve your variables\nOPENAI_API_KEY = env('OPENAI_API_KEY')\n# Other settings...",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Initialize environment variables\nenv = environ.Env(\n    DEBUG=(bool, False)\n)\nenviron.Env.read_env(os.path.join(BASE_DIR, '.env'))\n# Now retrieve your variables\nOPENAI_API_KEY = env('OPENAI_API_KEY')\n# settings.py\nREST_FRAMEWORK = {",
         "detail": "quiz_project.quiz_project.settings",
         "documentation": {}
     },
@@ -1308,7 +1499,7 @@
         "kind": 5,
         "importPath": "quiz_project.quiz_project.settings",
         "description": "quiz_project.quiz_project.settings",
-        "peekOfCode": "env = environ.Env(\n    DEBUG=(bool, False)\n)\nenviron.Env.read_env(os.path.join(BASE_DIR, '.env'))\n# Now retrieve your variables\nOPENAI_API_KEY = env('OPENAI_API_KEY')\n# Other settings...",
+        "peekOfCode": "env = environ.Env(\n    DEBUG=(bool, False)\n)\nenviron.Env.read_env(os.path.join(BASE_DIR, '.env'))\n# Now retrieve your variables\nOPENAI_API_KEY = env('OPENAI_API_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'DEFAULT_THROTTLE_RATES': {\n        'anon': '100/hour',",
         "detail": "quiz_project.quiz_project.settings",
         "documentation": {}
     },
@@ -1317,7 +1508,25 @@
         "kind": 5,
         "importPath": "quiz_project.quiz_project.settings",
         "description": "quiz_project.quiz_project.settings",
-        "peekOfCode": "OPENAI_API_KEY = env('OPENAI_API_KEY')\n# Other settings...",
+        "peekOfCode": "OPENAI_API_KEY = env('OPENAI_API_KEY')\n# settings.py\nREST_FRAMEWORK = {\n    'DEFAULT_THROTTLE_RATES': {\n        'anon': '100/hour',\n        'user': '1000/hour'\n    }\n}\n# Other settings...\nimport os",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "REST_FRAMEWORK",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_THROTTLE_RATES': {\n        'anon': '100/hour',\n        'user': '1000/hour'\n    }\n}\n# Other settings...\nimport os\nfrom dotenv import load_dotenv\n# Cargar variables desde .env",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "GENAI_API_KEY",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "GENAI_API_KEY = os.getenv(\"GENAI_API_KEY\")\nif not GENAI_API_KEY:\n    raise ValueError(\"⚠️ Falta la API Key de Google Gemini en el archivo .env\")",
         "detail": "quiz_project.quiz_project.settings",
         "documentation": {}
     },

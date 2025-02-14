@@ -8,6 +8,7 @@ from .views import (
     QuizCategoryViewSet, QuestionViewSet, AnswerViewSet, ScoreViewSet, PublicView
 )
 
+
 # ✅ DRF Router Setup for ViewSets
 router = DefaultRouter()
 router.register(r'categories', QuizCategoryViewSet, basename="quizcategory")
@@ -15,8 +16,10 @@ router.register(r'questions', QuestionViewSet, basename="question")
 router.register(r'answers', AnswerViewSet, basename="answer")
 router.register(r'scores', ScoreViewSet, basename="score")
 
+
 # ✅ URL Patterns
 urlpatterns = [
+
     # 🌍 API Home
     path('', api_home, name="api-home"),
 
@@ -37,16 +40,17 @@ urlpatterns = [
     path('scores/ranking/', get_ranking, name="get-ranking"),
 
     # 🔐 Authentication (JWT)
-    path('auth/token/', TokenObtainPairView.as_view(), name="token_obtain_pair"),
-    path('auth/token/refresh/', TokenRefreshView.as_view(), name="token_refresh"),
+    path('api/auth/token/', TokenObtainPairView.as_view(), name="token_obtain_pair"),
+    path('api/auth/token/refresh/', TokenRefreshView.as_view(), name="token_refresh"),
 
     # 📜 API Schema & Swagger Docs
-    path('schema/', SpectacularAPIView.as_view(), name="schema"),
-    path('docs/', SpectacularSwaggerView.as_view(url_name='schema'), name="swagger-ui"),
+    path('api/schema/', SpectacularAPIView.as_view(), name="schema"),
+    path('api/docs/', SpectacularSwaggerView.as_view(url_name='schema'), name="swagger-ui"),
 
     # 🔄 DRF ViewSets (Router)
-    path('', include(router.urls)),
+    path('api/', include(router.urls)),
 
     # 🌍 Public API
-    path('public/', PublicView.as_view(), name="public-view"),
+ path('public/', PublicView.as_view({'get': 'list'}), name="public-view"),
+
 ]

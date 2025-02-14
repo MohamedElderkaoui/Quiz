@@ -204,5 +204,23 @@ environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
 # Now retrieve your variables
 OPENAI_API_KEY = env('OPENAI_API_KEY')
+# settings.py
+REST_FRAMEWORK = {
+    'DEFAULT_THROTTLE_RATES': {
+        'anon': '100/hour',
+        'user': '1000/hour'
+    }
+}
 
 # Other settings...
+import os
+from dotenv import load_dotenv
+
+# Cargar variables desde .env
+load_dotenv()
+
+# Obtener la API Key de Google Gemini
+GENAI_API_KEY = os.getenv("GENAI_API_KEY")
+
+if not GENAI_API_KEY:
+    raise ValueError("⚠️ Falta la API Key de Google Gemini en el archivo .env")
