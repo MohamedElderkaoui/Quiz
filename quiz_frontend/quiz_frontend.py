@@ -1,15 +1,21 @@
+# quiz_frontend/quiz_frontend.py
 import reflex as rx
+from .state import QuizState
+from .components import quiz_component
 
 def index():
     return rx.center(
         rx.vstack(
-            rx.heading("Cuestionario Contrarreloj", size="xl"),
-            rx.button("Comenzar Juego", on_click=lambda: rx.redirect("/quiz")),
-            rx.button("Ver Ranking", on_click=lambda: rx.redirect("/ranking")),
-            spacing="4"
+            rx.heading("Welcome to the Quiz App", font_size="2xl"),
+            rx.button("Start Quiz", on_click=QuizState.fetch_questions),
+            quiz_component(),
+            spacing="20px",
         ),
-        height="100vh"
+        padding="50px",
     )
 
-app = rx.App()
-app.add_page(index, route="/", title="Inicio")
+app = rx.App(state=QuizState)
+app.add_page(index)
+
+if __name__ == "__main__":
+    app.serve()

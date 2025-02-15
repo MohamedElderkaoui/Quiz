@@ -36,6 +36,39 @@
         "documentation": {}
     },
     {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
         "label": "BaseCommand",
         "importPath": "django.core.management.base",
         "description": "django.core.management.base",
@@ -721,11 +754,38 @@
         "documentation": {}
     },
     {
+        "label": "render_answer",
+        "kind": 2,
+        "importPath": "quiz_frontend.components",
+        "description": "quiz_frontend.components",
+        "peekOfCode": "def render_answer(answer):\n    # Unwrap the reactive variable: use .value if available.\n    ans = answer.value if hasattr(answer, \"value\") else answer\n    return rx.button(\n        ans[\"text\"],\n        on_click=lambda: QuizState.select_answer(\n            QuizState.current_question_id,\n            ans[\"id\"]\n        ),\n        width=\"100%\",",
+        "detail": "quiz_frontend.components",
+        "documentation": {}
+    },
+    {
+        "label": "question_component",
+        "kind": 2,
+        "importPath": "quiz_frontend.components",
+        "description": "quiz_frontend.components",
+        "peekOfCode": "def question_component():\n    return rx.box(\n        rx.text(QuizState.current_question_text, font_size=\"xl\", font_weight=\"bold\"),\n        rx.vstack(\n            rx.foreach(\n                # Pass the computed list directly.\n                QuizState.current_question_answers,\n                render_answer\n            ),\n            align_items=\"start\",",
+        "detail": "quiz_frontend.components",
+        "documentation": {}
+    },
+    {
+        "label": "quiz_component",
+        "kind": 2,
+        "importPath": "quiz_frontend.components",
+        "description": "quiz_frontend.components",
+        "peekOfCode": "def quiz_component():\n    return rx.cond(\n        QuizState.quiz_completed,\n        rx.box(\n            rx.text(QuizState.quiz_result, font_size=\"2xl\"),\n            rx.button(\"Restart Quiz\", on_click=QuizState.fetch_questions),\n            text_align=\"center\",\n            padding=\"20px\",\n        ),\n        question_component(),",
+        "detail": "quiz_frontend.components",
+        "documentation": {}
+    },
+    {
         "label": "index",
         "kind": 2,
         "importPath": "quiz_frontend.quiz_frontend",
         "description": "quiz_frontend.quiz_frontend",
-        "peekOfCode": "def index():\n    return rx.center(\n        rx.vstack(\n            rx.heading(\"Cuestionario Contrarreloj\", size=\"xl\"),\n            rx.button(\"Comenzar Juego\", on_click=lambda: rx.redirect(\"/quiz\")),\n            rx.button(\"Ver Ranking\", on_click=lambda: rx.redirect(\"/ranking\")),\n            spacing=\"4\"\n        ),\n        height=\"100vh\"\n    )",
+        "peekOfCode": "def index():\n    return rx.center(\n        rx.vstack(\n            rx.heading(\"Welcome to the Quiz App\", font_size=\"2xl\"),\n            rx.button(\"Start Quiz\", on_click=QuizState.fetch_questions),\n            quiz_component(),\n            spacing=\"20px\",\n        ),\n        padding=\"50px\",\n    )",
         "detail": "quiz_frontend.quiz_frontend",
         "documentation": {}
     },
@@ -734,8 +794,17 @@
         "kind": 5,
         "importPath": "quiz_frontend.quiz_frontend",
         "description": "quiz_frontend.quiz_frontend",
-        "peekOfCode": "app = rx.App()\napp.add_page(index, route=\"/\", title=\"Inicio\")",
+        "peekOfCode": "app = rx.App(state=QuizState)\napp.add_page(index)\nif __name__ == \"__main__\":\n    app.serve()",
         "detail": "quiz_frontend.quiz_frontend",
+        "documentation": {}
+    },
+    {
+        "label": "QuizState",
+        "kind": 6,
+        "importPath": "quiz_frontend.state",
+        "description": "quiz_frontend.state",
+        "peekOfCode": "class QuizState(rx.State):\n    # A list of questions, where each question is a dict.\n    questions: List[Dict[str, Any]] = []\n    current_question_index: int = 0\n    selected_answers: List[Any] = []\n    score: int = 0\n    quiz_completed: bool = False\n    @rx.var(cache=True)\n    def current_question_text(self) -> str:\n        if self.questions:",
+        "detail": "quiz_frontend.state",
         "documentation": {}
     },
     {
@@ -1274,7 +1343,7 @@
         "kind": 5,
         "importPath": "quiz_project.quiz_project.settings",
         "description": "quiz_project.quiz_project.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure-76qrr=t8$48*3b#mqttn4m1bwl^5s&e%1+juz@0bwa)!)%vi@1'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    # Daphne primero\n    'daphne',  # Necesario para Channels\n    # Apps de Django\n    'django.contrib.admin',",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-76qrr=t8$48*3b#mqttn4m1bwl^5s&e%1+juz@0bwa)!)%vi@1'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    # Daphne primero\n    'daphne',  # Necesario para Channels\n    'corsheaders',\n    # Apps de Django",
         "detail": "quiz_project.quiz_project.settings",
         "documentation": {}
     },
@@ -1283,7 +1352,7 @@
         "kind": 5,
         "importPath": "quiz_project.quiz_project.settings",
         "description": "quiz_project.quiz_project.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    # Daphne primero\n    'daphne',  # Necesario para Channels\n    # Apps de Django\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    # Daphne primero\n    'daphne',  # Necesario para Channels\n    'corsheaders',\n    # Apps de Django\n    'django.contrib.admin',\n    'django.contrib.auth',",
         "detail": "quiz_project.quiz_project.settings",
         "documentation": {}
     },
@@ -1292,7 +1361,7 @@
         "kind": 5,
         "importPath": "quiz_project.quiz_project.settings",
         "description": "quiz_project.quiz_project.settings",
-        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    # Daphne primero\n    'daphne',  # Necesario para Channels\n    # Apps de Django\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    # Daphne primero\n    'daphne',  # Necesario para Channels\n    'corsheaders',\n    # Apps de Django\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
         "detail": "quiz_project.quiz_project.settings",
         "documentation": {}
     },
@@ -1301,7 +1370,7 @@
         "kind": 5,
         "importPath": "quiz_project.quiz_project.settings",
         "description": "quiz_project.quiz_project.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    # Daphne primero\n    'daphne',  # Necesario para Channels\n    # Apps de Django\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',  # Debe estar después de daphne",
+        "peekOfCode": "INSTALLED_APPS = [\n    # Daphne primero\n    'daphne',  # Necesario para Channels\n    'corsheaders',\n    # Apps de Django\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
         "detail": "quiz_project.quiz_project.settings",
         "documentation": {}
     },
@@ -1355,7 +1424,7 @@
         "kind": 5,
         "importPath": "quiz_project.quiz_project.settings",
         "description": "quiz_project.quiz_project.settings",
-        "peekOfCode": "CACHES = {\n    'default': {\n        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',\n    }\n}\nMIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',",
+        "peekOfCode": "CACHES = {\n    'default': {\n        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',\n    }\n}\nMIDDLEWARE = [\n    'corsheaders.middleware.CorsMiddleware',\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',",
         "detail": "quiz_project.quiz_project.settings",
         "documentation": {}
     },
@@ -1364,7 +1433,7 @@
         "kind": 5,
         "importPath": "quiz_project.quiz_project.settings",
         "description": "quiz_project.quiz_project.settings",
-        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'quiz_project.urls'",
+        "peekOfCode": "MIDDLEWARE = [\n    'corsheaders.middleware.CorsMiddleware',\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]",
         "detail": "quiz_project.quiz_project.settings",
         "documentation": {}
     },
@@ -1526,7 +1595,16 @@
         "kind": 5,
         "importPath": "quiz_project.quiz_project.settings",
         "description": "quiz_project.quiz_project.settings",
-        "peekOfCode": "GENAI_API_KEY = os.getenv(\"GENAI_API_KEY\")\nif not GENAI_API_KEY:\n    raise ValueError(\"⚠️ Falta la API Key de Google Gemini en el archivo .env\")",
+        "peekOfCode": "GENAI_API_KEY = os.getenv(\"GENAI_API_KEY\")\nif not GENAI_API_KEY:\n    raise ValueError(\"⚠️ Falta la API Key de Google Gemini en el archivo .env\")\nCORS_ALLOWED_ORIGINS = [\n    \"http://localhost:3000\",  # URL del frontend de Reflex\n]",
+        "detail": "quiz_project.quiz_project.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOWED_ORIGINS",
+        "kind": 5,
+        "importPath": "quiz_project.quiz_project.settings",
+        "description": "quiz_project.quiz_project.settings",
+        "peekOfCode": "CORS_ALLOWED_ORIGINS = [\n    \"http://localhost:3000\",  # URL del frontend de Reflex\n]",
         "detail": "quiz_project.quiz_project.settings",
         "documentation": {}
     },

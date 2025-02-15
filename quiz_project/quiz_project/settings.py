@@ -33,7 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     # Daphne primero
     'daphne',  # Necesario para Channels
-
+    'corsheaders',
     # Apps de Django
     'django.contrib.admin',
     'django.contrib.auth',
@@ -105,6 +105,7 @@ CACHES = {
 }
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -224,3 +225,6 @@ GENAI_API_KEY = os.getenv("GENAI_API_KEY")
 
 if not GENAI_API_KEY:
     raise ValueError("⚠️ Falta la API Key de Google Gemini en el archivo .env")
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",  # URL del frontend de Reflex
+]
