@@ -1,21 +1,39 @@
-# quiz_frontend/quiz_frontend.py
-import reflex as rx
-from .state import QuizState
-from .components import quiz_component
+"""Welcome to Reflex! This file outlines the steps to create a basic app."""
 
-def index():
-    return rx.center(
+import reflex as rx
+
+from rxconfig import config
+
+
+class State(rx.State):
+    """The app state."""
+
+    ...
+
+
+def index() -> rx.Component:
+    # Welcome Page (Index)
+    return rx.container(
+        rx.color_mode.button(position="top-right"),
         rx.vstack(
-            rx.heading("Welcome to the Quiz App", font_size="2xl"),
-            rx.button("Start Quiz", on_click=QuizState.fetch_questions),
-            quiz_component(),
-            spacing="20px",
+            rx.heading("Welcome to Reflex!", size="9"),
+            rx.text(
+                "Get started by editing ",
+                rx.code(f"{config.app_name}/{config.app_name}.py"),
+                size="5",
+            ),
+            rx.link(
+                rx.button("Check out our docs!"),
+                href="https://reflex.dev/docs/getting-started/introduction/",
+                is_external=True,
+            ),
+            spacing="5",
+            justify="center",
+            min_height="85vh",
         ),
-        padding="50px",
+        rx.logo(),
     )
 
-app = rx.App(state=QuizState)
-app.add_page(index)
 
-if __name__ == "__main__":
-    app.serve()
+app = rx.App()
+app.add_page(index)

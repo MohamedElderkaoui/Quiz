@@ -9,63 +9,11 @@
         "documentation": {}
     },
     {
-        "label": "json",
-        "kind": 6,
+        "label": "config",
+        "importPath": "rxconfig",
+        "description": "rxconfig",
         "isExtraImport": true,
-        "importPath": "json",
-        "description": "json",
-        "detail": "json",
-        "documentation": {}
-    },
-    {
-        "label": "asyncio",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "asyncio",
-        "description": "asyncio",
-        "detail": "asyncio",
-        "documentation": {}
-    },
-    {
-        "label": "websockets",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "websockets",
-        "description": "websockets",
-        "detail": "websockets",
-        "documentation": {}
-    },
-    {
-        "label": "List",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Dict",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Any",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "requests",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "requests",
-        "description": "requests",
-        "detail": "requests",
+        "detail": "rxconfig",
         "documentation": {}
     },
     {
@@ -474,11 +422,12 @@
         "documentation": {}
     },
     {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
+        "label": "json",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "dotenv",
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
         "documentation": {}
     },
     {
@@ -495,6 +444,23 @@
         "description": "dotenv",
         "isExtraImport": true,
         "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
         "documentation": {}
     },
     {
@@ -718,66 +684,12 @@
         "documentation": {}
     },
     {
-        "label": "QuizState",
+        "label": "State",
         "kind": 6,
-        "importPath": "quiz_frontend.pages.quiz",
-        "description": "quiz_frontend.pages.quiz",
-        "peekOfCode": "class QuizState(rx.State):\n    question: str = \"Cargando pregunta...\"\n    answers: list = []\n    correct_answer: str = \"\"\n    seconds_remaining: int = 30\n    score: int = 0\n    question_index: int = 0\n    game_over: bool = False\n    async def fetch_question(self):\n        \"\"\"Obtiene una pregunta del backend Django.\"\"\"",
-        "detail": "quiz_frontend.pages.quiz",
-        "documentation": {}
-    },
-    {
-        "label": "quiz",
-        "kind": 2,
-        "importPath": "quiz_frontend.pages.quiz",
-        "description": "quiz_frontend.pages.quiz",
-        "peekOfCode": "def quiz():\n    return rx.center(\n        rx.vstack(\n            rx.heading(\"Pregunta:\", size=\"lg\"),\n            rx.text(QuizState.question),\n            rx.foreach(QuizState.answers, lambda answer: rx.button(answer, on_click=lambda: QuizState.check_answer(answer))),\n            rx.text(f\"Tiempo restante: {QuizState.seconds_remaining} s\"),\n            spacing=\"4\"\n        ),\n        height=\"100vh\"",
-        "detail": "quiz_frontend.pages.quiz",
-        "documentation": {}
-    },
-    {
-        "label": "RankingState",
-        "kind": 6,
-        "importPath": "quiz_frontend.pages.ranking",
-        "description": "quiz_frontend.pages.ranking",
-        "peekOfCode": "class RankingState(rx.State):\n    ranking: list = []\n    async def get_ranking(self):\n        \"\"\"Obtiene los mejores puntajes del backend Django.\"\"\"\n        resp = await rx.get(\"/api/ranking/\")\n        self.ranking = resp.json()\ndef ranking():\n    return rx.center(\n        rx.vstack(\n            rx.heading(\"Ranking de Jugadores\", size=\"xl\"),",
-        "detail": "quiz_frontend.pages.ranking",
-        "documentation": {}
-    },
-    {
-        "label": "ranking",
-        "kind": 2,
-        "importPath": "quiz_frontend.pages.ranking",
-        "description": "quiz_frontend.pages.ranking",
-        "peekOfCode": "def ranking():\n    return rx.center(\n        rx.vstack(\n            rx.heading(\"Ranking de Jugadores\", size=\"xl\"),\n            rx.foreach(RankingState.ranking, lambda score: rx.text(f\"{score['player_name']}: {score['points']} pts\")),\n            rx.button(\"Volver al Inicio\", on_click=lambda: rx.redirect(\"/\")),\n            spacing=\"4\"\n        ),\n        height=\"100vh\"\n    )",
-        "detail": "quiz_frontend.pages.ranking",
-        "documentation": {}
-    },
-    {
-        "label": "render_answer",
-        "kind": 2,
-        "importPath": "quiz_frontend.components",
-        "description": "quiz_frontend.components",
-        "peekOfCode": "def render_answer(answer):\n    # Unwrap the reactive variable: use .value if available.\n    ans = answer.value if hasattr(answer, \"value\") else answer\n    return rx.button(\n        ans[\"text\"],\n        on_click=lambda: QuizState.select_answer(\n            QuizState.current_question_id,\n            ans[\"id\"]\n        ),\n        width=\"100%\",",
-        "detail": "quiz_frontend.components",
-        "documentation": {}
-    },
-    {
-        "label": "question_component",
-        "kind": 2,
-        "importPath": "quiz_frontend.components",
-        "description": "quiz_frontend.components",
-        "peekOfCode": "def question_component():\n    return rx.box(\n        rx.text(QuizState.current_question_text, font_size=\"xl\", font_weight=\"bold\"),\n        rx.vstack(\n            rx.foreach(\n                # Pass the computed list directly.\n                QuizState.current_question_answers,\n                render_answer\n            ),\n            align_items=\"start\",",
-        "detail": "quiz_frontend.components",
-        "documentation": {}
-    },
-    {
-        "label": "quiz_component",
-        "kind": 2,
-        "importPath": "quiz_frontend.components",
-        "description": "quiz_frontend.components",
-        "peekOfCode": "def quiz_component():\n    return rx.cond(\n        QuizState.quiz_completed,\n        rx.box(\n            rx.text(QuizState.quiz_result, font_size=\"2xl\"),\n            rx.button(\"Restart Quiz\", on_click=QuizState.fetch_questions),\n            text_align=\"center\",\n            padding=\"20px\",\n        ),\n        question_component(),",
-        "detail": "quiz_frontend.components",
+        "importPath": "quiz_frontend.quiz_frontend",
+        "description": "quiz_frontend.quiz_frontend",
+        "peekOfCode": "class State(rx.State):\n    \"\"\"The app state.\"\"\"\n    ...\ndef index() -> rx.Component:\n    # Welcome Page (Index)\n    return rx.container(\n        rx.color_mode.button(position=\"top-right\"),\n        rx.vstack(\n            rx.heading(\"Welcome to Reflex!\", size=\"9\"),\n            rx.text(",
+        "detail": "quiz_frontend.quiz_frontend",
         "documentation": {}
     },
     {
@@ -785,7 +697,7 @@
         "kind": 2,
         "importPath": "quiz_frontend.quiz_frontend",
         "description": "quiz_frontend.quiz_frontend",
-        "peekOfCode": "def index():\n    return rx.center(\n        rx.vstack(\n            rx.heading(\"Welcome to the Quiz App\", font_size=\"2xl\"),\n            rx.button(\"Start Quiz\", on_click=QuizState.fetch_questions),\n            quiz_component(),\n            spacing=\"20px\",\n        ),\n        padding=\"50px\",\n    )",
+        "peekOfCode": "def index() -> rx.Component:\n    # Welcome Page (Index)\n    return rx.container(\n        rx.color_mode.button(position=\"top-right\"),\n        rx.vstack(\n            rx.heading(\"Welcome to Reflex!\", size=\"9\"),\n            rx.text(\n                \"Get started by editing \",\n                rx.code(f\"{config.app_name}/{config.app_name}.py\"),\n                size=\"5\",",
         "detail": "quiz_frontend.quiz_frontend",
         "documentation": {}
     },
@@ -794,17 +706,8 @@
         "kind": 5,
         "importPath": "quiz_frontend.quiz_frontend",
         "description": "quiz_frontend.quiz_frontend",
-        "peekOfCode": "app = rx.App(state=QuizState)\napp.add_page(index)\nif __name__ == \"__main__\":\n    app.serve()",
+        "peekOfCode": "app = rx.App()\napp.add_page(index)",
         "detail": "quiz_frontend.quiz_frontend",
-        "documentation": {}
-    },
-    {
-        "label": "QuizState",
-        "kind": 6,
-        "importPath": "quiz_frontend.state",
-        "description": "quiz_frontend.state",
-        "peekOfCode": "class QuizState(rx.State):\n    # A list of questions, where each question is a dict.\n    questions: List[Dict[str, Any]] = []\n    current_question_index: int = 0\n    selected_answers: List[Any] = []\n    score: int = 0\n    quiz_completed: bool = False\n    @rx.var(cache=True)\n    def current_question_text(self) -> str:\n        if self.questions:",
-        "detail": "quiz_frontend.state",
         "documentation": {}
     },
     {
@@ -1685,7 +1588,7 @@
         "kind": 5,
         "importPath": "rxconfig",
         "description": "rxconfig",
-        "peekOfCode": "config = rx.Config(\n    app_name=\"quiz_frontend\",\n    api_url=\"http://127.0.0.1:8000/api\"  # Ajusta según la URL de tu backend Django\n)",
+        "peekOfCode": "config = rx.Config(\n    app_name=\"quiz_frontend\",\n)",
         "detail": "rxconfig",
         "documentation": {}
     }
